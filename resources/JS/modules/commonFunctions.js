@@ -1,4 +1,4 @@
-let name = 'SplitMyBill';
+let name = 'SplitMyBill'
 
 let SplitMyBill = {
 	getName: function(){
