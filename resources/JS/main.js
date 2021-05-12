@@ -19,4 +19,4 @@ let val = SplitMyBill.getName();
 console.log(val);
 
 const group = new createGroup( 3, 20 );
-console.log( group.wheels, group.topSpeed );
+console.log( group.id, group.params );
