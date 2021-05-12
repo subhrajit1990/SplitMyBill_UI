@@ -2,7 +2,7 @@ let name = 'SplitMyBill'
 
 let SplitMyBill = {
 	getName: function(){
-		retrun name
+		return name
 	},
 	setName: function(newName){
 		name = newName
