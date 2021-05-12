@@ -1,4 +1,5 @@
 import SplitMyBill from './modules/commonFunctions.js'
+import createGroup from './modules/createGroup.js'
 
 /*if (typeof (SMB) == "undefined") {
     SMB = {}
@@ -16,3 +17,6 @@ bootStrapJS = SMB.bootStrapJSOps */
 console.log("helo");
 let val = SplitMyBill.getName();
 console.log(val);
+
+const group = new createGroup( 3, 20 );
+console.log( group.wheels, group.topSpeed );
