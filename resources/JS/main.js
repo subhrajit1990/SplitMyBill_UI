@@ -1,4 +1,4 @@
-import SplitMyBill, {name} from './modules/commonFunctions.js'
+import SplitMyBill from './modules/commonFunctions.js'
 
 /*if (typeof (SMB) == "undefined") {
     SMB = {}
