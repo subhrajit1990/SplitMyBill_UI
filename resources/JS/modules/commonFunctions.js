@@ -1,11 +1,11 @@
-export let name = 'SplitMyBill';
+let name = 'SplitMyBill';
 
 let SplitMyBill = {
 	getName: function(){
-		retrun name;
+		retrun name
 	},
 	setName: function(newName){
-		name = newName;
+		name = newName
 	}
 }
 
