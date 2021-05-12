@@ -1,6 +1,6 @@
 import SplitMyBill, {name} from '/modules/commonFunctions.js'
 
-if (typeof (SMB) == "undefined") {
+/*if (typeof (SMB) == "undefined") {
     SMB = {}
 }
 
@@ -12,4 +12,8 @@ SMB.bootStrapJSOps = new function(){
 
 }
 
-bootStrapJS = SMB.bootStrapJSOps
+bootStrapJS = SMB.bootStrapJSOps */
+
+
+let val = SplitMyBill.getName();
+console.log(val);
