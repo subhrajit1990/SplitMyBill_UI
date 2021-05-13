@@ -1,7 +1,6 @@
 /*import SplitMyBill from './modules/commonFunctions.js'
 import createGroup from './modules/createGroup.js' */
-
-export default class mainFunctionality{
+class mainFunctionality{
 	constructor(){
 		console.log("Executing");
 	}
