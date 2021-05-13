@@ -6,6 +6,14 @@ class CommonValidationEngine extends CommonValidationFunctions{
 		this.formValidator = formValidator;
 	}
 	
+	commonValidatorValid(element, check) {
+    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') {
+        		return this[check](element.value);   
+    		} else {
+        		return this[check](element);
+    		}
+	}
+	
 	commonValidationFields(){
 		let errorCount = 0,
         	    element,
@@ -45,13 +53,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
 	
 	}
 	
-	commonValidatorValid(element, check) {
-    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') {
-        		return this[check](element.value);   
-    		} else {
-        		return this[check](element);
-    		}
-	}
+	
 }
 
 export default CommonValidationEngine;
