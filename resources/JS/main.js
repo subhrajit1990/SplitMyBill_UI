@@ -10,11 +10,11 @@ SMB.bootStrapJSOps = new function(){
 		var form = document.getElementsByClassName("inputType"),
 		form_validator_check = {
             		lastname: {
-                		verify: ["nullcheck","lastname"],
+                		verify: ["nullCheck","lastname"],
                 		message: ["Please enter the last name","Please enter 4 digits last name"]
             		},
             		firstname: {
-                		verify: ["nullcheck"],
+                		verify: ["nullCheck"],
                 		message: ["Please enter the first name"]
             		}
         	};
