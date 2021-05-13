@@ -17,11 +17,13 @@ if (typeof (SMB) == "undefined") {
 }
 
 SMB.bootStrapJSOps = new function(){	
-    this.init = function(){
-	var mainRt = new mainRoute();
-	console.log(mainRt.getRouteName());
-    }
-
+    	this.init = function(){
+		
+   	 }
+	function formValidation(){
+		var mainRt = new mainRoute();
+		console.log(mainRt.getRouteName());
+	}
 }
 
 bootStrapJS = SMB.bootStrapJSOps
