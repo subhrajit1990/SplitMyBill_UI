@@ -25,7 +25,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
                			}
                 		if (formValidator[n] && formValidator[n].verify) {
                     			(formValidator[n].verify).map(function(i,e){
-                   	   			this.CommonValidatorValid(element, i);
+                   	   			this.commonValidatorValid(element, i);
                         			if (err) {
                             				formValidator[n].err = err;                       
                             				console.log("ERROR "+formValidator[n].message[e] || "Error occured");
@@ -45,7 +45,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
 	
 	}
 	
-	CommonValidatorValid(element, check) {
+	commonValidatorValid(element, check) {
     		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') {
         		return this[check](element.value);   
     		} else {
