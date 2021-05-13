@@ -12,10 +12,10 @@ class MainRoute{
     }
 	
    validateForm(form, formValidator){
-	var validateFormflag = true;
+	let validateFormflag = false;
 	let validationOps = new commonValidationEngine(form,formValidator);
-	validationOps.commonValidationFields();
-   	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
+	validateFormflag = validationOps.commonValidationFields();
+   	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator) + " :: "+validateFormflag);
 	return validateFormflag;
    }
   createGroupRoute(){
