@@ -11,5 +11,9 @@ class mainRoute{
 		console.log( group.id, group.params );
       return "route"
     }
+	
+   validateForm(form, formValidator){
+   	console.log(form + " :: "+formValidator);
+   }
 }
 window.mainRoute = mainRoute
