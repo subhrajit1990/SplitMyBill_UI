@@ -18,9 +18,9 @@ if (typeof (SMB) == "undefined") {
 
 SMB.bootStrapJSOps = new function(){	
     	this.init = function(){
-	 formValidation();
+	
    	 }
-	function formValidation(){
+	 this.formValidation = function(){
 		var mainRt = new mainRoute();
 		console.log(mainRt.getRouteName());
 	}
