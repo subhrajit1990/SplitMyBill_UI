@@ -19,8 +19,11 @@ start(){
 window.onload = function(){
     console.log("Test Started");
 	
-	const group = new createGroup( 3, 20 );
-	console.log( group.id, group.params ); 
+	formValidation(){
+		const group = new createGroup( 3, 20 );
+		console.log( group.id, group.params ); 
+	}
+	
     
 
    
