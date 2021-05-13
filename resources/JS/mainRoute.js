@@ -1,5 +1,5 @@
-import SplitMyBill from './modules/commonFunctions.js'
-import createGroup from './modules/createGroup.js'
+/*import SplitMyBill from './modules/commonFunctions.js'
+import createGroup from './modules/createGroup.js' */
 
 class mainRoute{
   constructor(){
@@ -7,8 +7,8 @@ class mainRoute{
     }
   
   getRouteName(){
-    const group = new createGroup( 3, 20 );
-		console.log( group.id, group.params ); 
+    /*const group = new createGroup( 3, 20 );
+		console.log( group.id, group.params ); */
       return "route"
     }
 }
