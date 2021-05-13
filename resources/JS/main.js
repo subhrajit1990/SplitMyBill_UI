@@ -23,6 +23,7 @@ SMB.bootStrapJSOps = new function(){
 		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
 			console.log("validation success");
+			mainRt.createGroupRoute();
 		}else{
 			console.log("validation fail");
 		}
