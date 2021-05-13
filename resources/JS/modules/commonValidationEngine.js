@@ -1,4 +1,4 @@
-import commonValidationEngine from './modules/commonValidationFunctions.js'
+import commonValidationFunctions from './modules/commonValidationFunctions.js'
 class commonValidationEngine entends commonValidationFunctions{
 	constructor(){
 	}
