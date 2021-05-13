@@ -11,7 +11,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
         	    element,
         	    n,
         	    out;
-        	Object.keys(form).map(function(key, index) {
+        	Object.keys(this.form).map(function(key, index) {
             		if(typeof parseInt(key) == "number" && !isNaN(parseInt(key)) ){
                 		element = form[index];
                 		if (!element.hasAttribute("name")) {
@@ -21,12 +21,12 @@ class CommonValidationEngine extends CommonValidationFunctions{
                 		} else {
                     			n = element.name, out;
                			}
-                		if (list[n] && list[n].verify) {
-                    			(list[n].verify).map(function(i,e){
+                		if (this.formValidator[n] && this.formValidator[n].verify) {
+                    			(this.formValidator[n].verify).map(function(i,e){
                    	   			CommonValidatorValid(element, i);
                         			if (err) {
-                            				list[n].err = err;                       
-                            				console.log("ERROR "+list[n].message[e] || "Error occured");
+                            				this.formValidator[n].err = err;                       
+                            				console.log("ERROR "+this.formValidator[n].message[e] || "Error occured");
                             				errorCount++;
                         			}
                     			})
