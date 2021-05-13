@@ -1,7 +1,7 @@
 import commonValidationEngine from './modules/commonValidationEngine.js'
 import createGroup from './modules/createGroup.js' 
 
-class mainRoute{
+class MainRoute{
   constructor(){
       console.log("main route");
     }
