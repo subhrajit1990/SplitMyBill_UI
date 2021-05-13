@@ -19,7 +19,7 @@ SMB.bootStrapJSOps = new function(){
             		}
         	};
 		
-		var mainRt = new mainRoute();
+		var mainRt = new MainRoute();
 		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
 			console.log("validation success");
