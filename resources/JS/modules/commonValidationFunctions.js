@@ -3,8 +3,8 @@ class CommonValidationFunctions{
         this.err="";
     }
     nullCheck(s) {
-      err = s.length ? 0 : 5;
-    return err;
+      this.err = s.length ? 0 : 5;
+    return this.err;
     }
 }
 export default CommonValidationFunctions
