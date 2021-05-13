@@ -2,7 +2,9 @@ import SplitMyBill from './modules/commonFunctions.js'
 import createGroup from './modules/createGroup.js'
 
 class mainFunctionality{
-	constructor(){}
+	constructor(){
+		console.log("Executing");
+	}
 /*if (typeof (SMB) == "undefined") {
     SMB = {}
 }
