@@ -1,7 +1,7 @@
-import SplitMyBill from './modules/commonFunctions.js'
-import createGroup from './modules/createGroup.js'
+/*import SplitMyBill from './modules/commonFunctions.js'
+import createGroup from './modules/createGroup.js' */
 
-class mainFunctionality{
+export default class mainFunctionality{
 	constructor(){
 		console.log("Executing");
 	}
@@ -20,10 +20,10 @@ bootStrapJS = SMB.bootStrapJSOps */
 	
 start(){
 	console.log("helo");
-	let val = SplitMyBill.getName();
+	/*let val = SplitMyBill.getName();
 	console.log(val);
 
 	const group = new createGroup( 3, 20 );
-	console.log( group.id, group.params );
+	console.log( group.id, group.params ); */
 }
 }
