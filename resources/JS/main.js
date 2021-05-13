@@ -1,6 +1,8 @@
 import SplitMyBill from './modules/commonFunctions.js'
 import createGroup from './modules/createGroup.js'
 
+class mainFunctionality{
+	constructor(){}
 /*if (typeof (SMB) == "undefined") {
     SMB = {}
 }
@@ -20,3 +22,4 @@ console.log(val);
 
 const group = new createGroup( 3, 20 );
 console.log( group.id, group.params );
+}
