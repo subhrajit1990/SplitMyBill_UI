@@ -7,7 +7,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
 	}
 	
 	commonValidation(){
-		let nullCheckStatus = this.nullCheck("s")
+		let nullCheckStatus = super.nullCheck("s")
 		console.log("Validation starts with validation engine"+this.form + " :: "+nullCheckStatus);
 	}
 }
