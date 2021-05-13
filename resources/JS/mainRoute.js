@@ -7,6 +7,8 @@ class mainRoute{
     }
   
   getRouteName(){
+    const group = new createGroup( 3, 20 );
+		console.log( group.id, group.params ); 
       return "route"
     }
 }
