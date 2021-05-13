@@ -26,3 +26,4 @@ start(){
 	console.log( group.id, group.params ); */
 }
 }
+export default mainFunctionality
