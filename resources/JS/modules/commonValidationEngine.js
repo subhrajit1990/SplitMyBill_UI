@@ -35,7 +35,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
                			}
                 		if (formValidator[n] && formValidator[n].verify) {
                     			(formValidator[n].verify).map(function(i,e){
-                   	   			self.commonValidatorValid(element, i);
+                   	   			let err = self.commonValidatorValid(element, i);
                         			if (err) {
                             				formValidator[n].err = err;                       
                             				console.log("ERROR "+formValidator[n].message[e] || "Error occured");
