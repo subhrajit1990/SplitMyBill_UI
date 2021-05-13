@@ -1,4 +1,4 @@
-class commonValidationFunctions{
+class CommonValidationFunctions{
   constructor(){}
 }
-export default commonValidationFunctions
+export default CommonValidationFunctions
