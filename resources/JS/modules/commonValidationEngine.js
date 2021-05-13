@@ -49,11 +49,8 @@ class CommonValidationEngine extends CommonValidationFunctions{
             	  return false;
         	}
 		console.log("Validation starts with validation engine"+this.form + " :: ");
-        	return true;
-	
-	}
-	
-	
+        	return true;	
+	}	
 }
 
 export default CommonValidationEngine;
