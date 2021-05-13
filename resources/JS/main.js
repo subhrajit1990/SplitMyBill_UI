@@ -14,12 +14,14 @@ SMB.bootStrapJSOps = new function(){
     }
 
 }
-
 bootStrapJS = SMB.bootStrapJSOps */
-console.log("helo");
-let val = SplitMyBill.getName();
-console.log(val);
+	
+start(){
+	console.log("helo");
+	let val = SplitMyBill.getName();
+	console.log(val);
 
-const group = new createGroup( 3, 20 );
-console.log( group.id, group.params );
+	const group = new createGroup( 3, 20 );
+	console.log( group.id, group.params );
+}
 }
