@@ -1,4 +1,4 @@
-import SplitMyBill from './modules/commonValidationEngine.js'
+import commonValidationEngine from './modules/commonValidationEngine.js'
 import createGroup from './modules/createGroup.js' 
 
 class mainRoute{
@@ -13,6 +13,7 @@ class mainRoute{
 	
    validateForm(form, formValidator){
 	var flag = false;
+	commonValidationEngine.commonValidation(form,formValidator);
    	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
 	return flag;
    }
