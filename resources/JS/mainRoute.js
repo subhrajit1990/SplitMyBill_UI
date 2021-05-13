@@ -13,7 +13,9 @@ class mainRoute{
     }
 	
    validateForm(form, formValidator){
+	var flag = false;
    	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
+	return flag;
    }
 }
 window.mainRoute = mainRoute
