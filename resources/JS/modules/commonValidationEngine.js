@@ -3,7 +3,7 @@ class commonValidationEngine entends commonValidationFunctions{
 	constructor(){
 	}
 	
-	commonValidation(){
+	commonValidation(form,formValidator){
 		console.log("Validation starts with validation engine");
 	}
 }
