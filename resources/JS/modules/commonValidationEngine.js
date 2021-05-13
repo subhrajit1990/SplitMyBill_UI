@@ -1,5 +1,5 @@
 import CommonValidationFunctions from './commonValidationFunctions.js'
-class CommonValidationEngine extends commonValidationFunctions{
+class CommonValidationEngine extends CommonValidationFunctions{
 	constructor(){
 		//super(); // must call while extending a class, this constructor is from extending class
 	}
