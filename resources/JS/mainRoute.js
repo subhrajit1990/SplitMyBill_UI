@@ -12,4 +12,4 @@ class mainRoute{
       return "route"
     }
 }
- window.mainRoute = mainRoute
+ //window.mainRoute = mainRoute
