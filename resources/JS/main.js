@@ -21,9 +21,11 @@ SMB.bootStrapJSOps = new function(){
 		formValidation();
    	 }
 	formValidation = function(){
-		var mainRt = new mainRoute();
-		console.log(mainRt.getRouteName());
+		
 	}
+	
+	var mainRt = new mainRoute();
+	console.log(mainRt.getRouteName());
 }
 
 bootStrapJS = SMB.bootStrapJSOps
