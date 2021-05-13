@@ -19,7 +19,7 @@ if (typeof (SMB) == "undefined") {
 SMB.bootStrapJSOps = new function(){	
     this.init = function(){
 	var mainRt = new mainRoute();
-	console.log(mainRt. getRouteName);
+	console.log(mainRt.getRouteName());
     }
 
 }
