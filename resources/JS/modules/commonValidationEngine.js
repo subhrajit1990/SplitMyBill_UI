@@ -10,10 +10,12 @@ class CommonValidationEngine extends CommonValidationFunctions{
 		let errorCount = 0,
         	    element,
         	    n,
-        	    out;
-        	Object.keys(this.form).map(function(key, index) {
+        	    out,
+		    tempForm = this.form,
+		    formValidator = this.formValidator;
+        	Object.keys(tempForm).map(function(key, index) {
             		if(typeof parseInt(key) == "number" && !isNaN(parseInt(key)) ){
-                		element = this.form[index];
+                		element = tempForm[index];
                 		if (!element.hasAttribute("name")) {
                     			n = element.id, out;
                 		} else if (element.hasAttribute("src")) {
@@ -21,12 +23,12 @@ class CommonValidationEngine extends CommonValidationFunctions{
                 		} else {
                     			n = element.name, out;
                			}
-                		if (this.formValidator[n] && this.formValidator[n].verify) {
-                    			(this.formValidator[n].verify).map(function(i,e){
+                		if (formValidator[n] && formValidator[n].verify) {
+                    			(formValidator[n].verify).map(function(i,e){
                    	   			CommonValidatorValid(element, i);
                         			if (err) {
-                            				this.formValidator[n].err = err;                       
-                            				console.log("ERROR "+this.formValidator[n].message[e] || "Error occured");
+                            				formValidator[n].err = err;                       
+                            				console.log("ERROR "+formValidator[n].message[e] || "Error occured");
                             				errorCount++;
                         			}
                     			})
