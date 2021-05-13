@@ -13,7 +13,7 @@ class mainRoute{
     }
 	
    validateForm(form, formValidator){
-   	console.log(form + " :: "+formValidator);
+   	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
    }
 }
 window.mainRoute = mainRoute
