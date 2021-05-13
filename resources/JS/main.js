@@ -21,7 +21,11 @@ SMB.bootStrapJSOps = new function(){
 		
 		var mainRt = new mainRoute();
 		console.log(mainRt.getRouteName());
-		mainRt. validateForm(form,form_validator_check);
+		if(mainRt.validateForm(form,form_validator_check)){
+			console.log("validation success");
+		}else{
+			console.log("validation fail");
+		}
 	}
 }
 
