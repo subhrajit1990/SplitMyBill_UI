@@ -18,7 +18,7 @@ class mainRoute{
 	return validateFormflag;
    }
   createGroupRoute(){
- 	let creationGroupStatus = flase;
+ 	let creationGroupStatus = false;
    	const group = new createGroup( 3, 20 );
 	console.log( group.id, group.params );
 	return creationGroupStatus;
