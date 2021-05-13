@@ -8,11 +8,6 @@ window.onload = function(){
 		const group = new createGroup( 3, 20 );
 		console.log( group.id, group.params ); 
 	}
-	
-    
-
-	start();
-   
 }
 
 
