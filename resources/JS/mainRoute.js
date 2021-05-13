@@ -16,5 +16,11 @@ class mainRoute{
    	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
 	return flag;
    }
+  createGroup(){
+ 	let creationGroupStatus = flase;
+   	const group = new createGroup( 3, 20 );
+	console.log( group.id, group.params );
+	return creationGroupStatus;
+  }
 }
 window.mainRoute = mainRoute
