@@ -13,7 +13,7 @@ class mainRoute{
 	
    validateForm(form, formValidator){
 	var flag = false;
-	commonValidationEngine.commonValidation(form,formValidator);
+	new commonValidation(form,formValidator);
    	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
 	return flag;
    }
