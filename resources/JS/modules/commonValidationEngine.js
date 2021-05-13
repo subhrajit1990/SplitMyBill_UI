@@ -13,7 +13,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
         	    out;
         	Object.keys(this.form).map(function(key, index) {
             		if(typeof parseInt(key) == "number" && !isNaN(parseInt(key)) ){
-                		element = form[index];
+                		element = this.form[index];
                 		if (!element.hasAttribute("name")) {
                     			n = element.id, out;
                 		} else if (element.hasAttribute("src")) {
