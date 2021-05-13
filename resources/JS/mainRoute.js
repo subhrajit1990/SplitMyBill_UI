@@ -14,7 +14,7 @@ class MainRoute{
    validateForm(form, formValidator){
 	var validateFormflag = true;
 	let validationOps = new commonValidationEngine(form,formValidator);
-	validationOps.commonValidation();
+	validationOps.commonValidationFields();
    	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator));
 	return validateFormflag;
    }
