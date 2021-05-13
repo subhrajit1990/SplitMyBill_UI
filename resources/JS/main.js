@@ -18,8 +18,8 @@ if (typeof (SMB) == "undefined") {
 
 SMB.bootStrapJSOps = new function(){	
     this.init = function(){
-	console.log("executing");
-	console.log(SplitMyBill.getName());
+	var mainRt = new mainRoute();
+	console.log(mainRt. getRouteName);
     }
 
 }
