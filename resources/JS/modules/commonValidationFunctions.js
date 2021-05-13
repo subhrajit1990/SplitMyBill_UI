@@ -1,6 +1,6 @@
 class CommonValidationFunctions{
     constructor(){}
-    nullcheck(s) {
+    nullCheck(s) {
       err = s.length ? 0 : 5;
     return err;
     }
