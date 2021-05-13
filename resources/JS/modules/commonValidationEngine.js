@@ -20,7 +20,9 @@ class CommonValidationEngine extends CommonValidationFunctions{
         	    n,
         	    out,
 		    tempForm = this.form,
-		    formValidator = this.formValidator;
+		    formValidator = this.formValidator,
+		    self = this;
+		
         	Object.keys(tempForm).map(function(key, index) {
             		if(typeof parseInt(key) == "number" && !isNaN(parseInt(key)) ){
                 		element = tempForm[index];
@@ -33,7 +35,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
                			}
                 		if (formValidator[n] && formValidator[n].verify) {
                     			(formValidator[n].verify).map(function(i,e){
-                   	   			this.commonValidatorValid(element, i);
+                   	   			self.commonValidatorValid(element, i);
                         			if (err) {
                             				formValidator[n].err = err;                       
                             				console.log("ERROR "+formValidator[n].message[e] || "Error occured");
