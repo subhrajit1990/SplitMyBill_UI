@@ -24,4 +24,4 @@ class MainRoute{
 	return creationGroupStatus;
   }
 }
-window.mainRoute = MainRoute
+window.MainRoute = MainRoute
