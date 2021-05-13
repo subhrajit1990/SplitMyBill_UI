@@ -4,7 +4,7 @@ import createGroup from './modules/createGroup.js'
 window.onload = function(){
     console.log("Test Started");
 	
-	formValidation = function(){
+	function formValidation(){
 		const group = new createGroup( 3, 20 );
 		console.log( group.id, group.params ); 
 	}
