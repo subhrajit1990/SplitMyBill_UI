@@ -6,11 +6,11 @@ class CommonValidationEngine extends CommonValidationFunctions{
 		this.formValidator = formValidator;
 	}
 	
-	commonValidatorValid(element, check) {
-    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') {
-        		return this[check](element.value);   
+	commonValidatorValid(element, fnName) {
+    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') { // More element type goes here
+        		return this[fnName](element.value);   
     		} else {
-        		return this[check](element);
+        		return this[fnName](element);
     		}
 	}
 	
@@ -52,5 +52,4 @@ class CommonValidationEngine extends CommonValidationFunctions{
         	return true;	
 	}	
 }
-
 export default CommonValidationEngine;
