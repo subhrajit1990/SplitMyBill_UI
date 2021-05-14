@@ -25,8 +25,8 @@ class MainRoute{
   createGroupRoute(){
  	let creationGroupStatus = false;
 	try{
-   	const group = new createGroup( 3, 20 );
-	console.log( group.id, group.params );
+   		const group = new createGroup( 3, 20 );
+		console.log( group.id, group.params );
 	} catch(err){
 		throw new Error("Exception happened during group creation");
 	}
