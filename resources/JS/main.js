@@ -4,9 +4,10 @@ if (typeof (SMB) == "undefined") {
 
 SMB.bootStrapJSOps = new function(){	
     	this.init = function(){
-		// doSmething
+		// doSomething
    	 }
 	formValidation = function(){
+		// Sample request payload construction -- Starts
 		var form = document.getElementsByClassName("inputType"),
 		form_validator_check = {
             		lastname: {
@@ -18,7 +19,9 @@ SMB.bootStrapJSOps = new function(){
                 		message: ["Please enter the first name"]
             		}
         	};
+		// Sample request payload construction -- Ends
 		
+		// Sample function call -- Starts
 		var mainRt = new MainRoute();
 		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
@@ -27,6 +30,7 @@ SMB.bootStrapJSOps = new function(){
 		}else{
 			console.log("validation fail");
 		}
+		// Sample function call -- Ends
 	}
 }
 
