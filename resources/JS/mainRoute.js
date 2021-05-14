@@ -13,15 +13,23 @@ class MainRoute{
 	
    validateForm(form, formValidator){
 	let validateFormflag = false;
-	let validationOps = new commonValidationEngine(form,formValidator);
-	validateFormflag = validationOps.commonValidationFields();
-   	console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator) + " :: "+validateFormflag);
+	   try{
+		let validationOps = new commonValidationEngine(form,formValidator);
+		validateFormflag = validationOps.commonValidationFields();
+   		console.log(JSON.stringify(form) + " :: "+JSON.stringify(formValidator) + " :: "+validateFormflag);
+	   }catch(err){
+	   	throw new Error("Exception happened during form validation");
+	   }
 	return validateFormflag;
    }
   createGroupRoute(){
  	let creationGroupStatus = false;
+	try{
    	const group = new createGroup( 3, 20 );
 	console.log( group.id, group.params );
+	} catch(err){
+		throw new Error("Exception happened during group creation");
+	}
 	return creationGroupStatus;
   }
 }
