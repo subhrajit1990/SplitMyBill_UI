@@ -8,7 +8,7 @@ export default class CreateGroup extends CommonFunctions {
 	groupCreation(){
 
 	const extraParameters = {
-		headers = {
+		headers : {
 	    		'Content-Type': 'application/json',
 	     		'Accept': 'application/json',
 		    	'channel': this.getChannel(),
