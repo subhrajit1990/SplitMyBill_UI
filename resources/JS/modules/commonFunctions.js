@@ -16,7 +16,7 @@ class CommonFunctions{
 
 	serverCall(uri,extraParameters){
 		const headers = {
-			header:{
+			headers:{
 	    		'Content-Type': 'application/json',
 	     		'Accept': 'application/json',
 		    	'channel': this.getChannel(),
