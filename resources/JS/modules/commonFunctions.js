@@ -1,4 +1,4 @@
-export default class CommonFunctions{
+class CommonFunctions{
 	constructor(){
 
 	}
@@ -16,12 +16,11 @@ export default class CommonFunctions{
 
 	serverCall(extraParameters){
 
-	return fetch('https://sharemybillapi.herokuapp.com/BillManager/expenses/api/createGroup',extraParameters)
-    	.then(res => console.log(JSON.stringify(res)))
-    	.catch(error => console.log(error))
+		return fetch('https://sharemybillapi.herokuapp.com/BillManager/expenses/api/createGroup',extraParameters)
+    		.then(res => console.log(JSON.stringify(res)))
+    		.catch(error => console.log(error))
 
 	}
-
-
-
 }
+ 
+export default CommonFunctions
