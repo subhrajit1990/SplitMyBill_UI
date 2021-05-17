@@ -8,6 +8,12 @@ export default class CreateGroup extends CommonFunctions {
 	groupCreation(){
 
 	const extraParameters = {
+		headers = {
+	    		'Content-Type': 'application/json',
+	     		'Accept': 'application/json',
+		    	'channel': this.getChannel(),
+		    	'masterTxnRefNo': this.genMasterTxnRefNo(),
+	    	},
 	    method: 'POST',
 	    body: JSON.stringify(this.params)
   	};
