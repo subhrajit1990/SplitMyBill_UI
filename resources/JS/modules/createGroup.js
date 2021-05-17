@@ -12,7 +12,7 @@ export default class CreateGroup extends CommonFunctions {
 	    body: JSON.stringify(this.params)
   	};
 
-  	return this.serverCall(extraParameters);
+  	return this.serverCall("expenses/api/createGroup",extraParameters);
 		
 	}
 }
