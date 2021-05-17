@@ -1,6 +1,6 @@
 import CommonFunctions from './commonFunctions.js'
 export default class CreateGroup extends CommonFunctions {
-	constructor(id,params){
+	constructor(params){
 		super();
 		this.params = params;
 	}
