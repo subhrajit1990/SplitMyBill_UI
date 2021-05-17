@@ -14,9 +14,14 @@ class CommonFunctions{
 	}
 
 
-	serverCall(extraParameters){
-
-		return fetch('https://sharemybillapi.herokuapp.com/BillManager/expenses/api/createGroup',extraParameters)
+	serverCall(uri,extraParameters){
+		const headers = {
+	    		'Content-Type': 'application/json',
+	     		'Accept': 'application/json',
+		    	'channel': this.getChannel(),
+		    	'masterTxnRefNo': this.genMasterTxnRefNo(),
+	    	}
+		return fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
     		.then(res => console.log(JSON.stringify(res)))
     		.catch(error => console.log(error))
 
