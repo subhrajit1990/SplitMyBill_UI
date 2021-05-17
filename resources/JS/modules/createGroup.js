@@ -1,4 +1,4 @@
-import CommonFunctions from './modules/CommonFunctions.js'
+import CommonFunctions from './CommonFunctions.js'
 export default class CreateGroup extends CommonFunctions {
 	constructor(id,params){
 		super();
