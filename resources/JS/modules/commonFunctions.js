@@ -24,7 +24,9 @@ class CommonFunctions{
 			}
 	    	}
 		return fetch('https://sharemybillapi.herokuapp.com/BillManager/expenses/api/createGroup',Object.assign(extraParameters,headers))
-    		.then(res => console.log(JSON.stringify(res.json())))
+    		.then((response) =>response.json());
+		.then((data) => {console.log(data);
+			})
     		.catch(error => console.log(error))
 
 	}
