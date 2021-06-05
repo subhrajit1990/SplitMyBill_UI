@@ -22,7 +22,7 @@ class MainRoute{
 	   }
 	return validateFormflag;
    }
-  createGroupRoute(payLoad){
+  async createGroupRoute(payLoad){
  	let creationGroupStatus = false;
 	try{
    		const group = new createGroup( payLoad );
