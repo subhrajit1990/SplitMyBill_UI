@@ -12,7 +12,7 @@ export default class CreateGroup extends CommonFunctions {
 	    method: 'POST',
 	    body: JSON.stringify(this.params)
   	};
-	 let fethData = this.serverCall().then(response => {
+	 let fethData = this.serverCall("expenses/api/createGroup",extraParameters).then(response => {
 		 console.log(response); 
 		 return response;
 	 });
