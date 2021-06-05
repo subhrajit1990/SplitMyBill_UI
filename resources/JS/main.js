@@ -67,8 +67,14 @@ SMB.bootStrapJSOps = new function(){
 		var mainRt = new MainRoute();
 		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
+			var reqPayload = {"createGroupRequest":{
+				"groupName":form[0].value,
+				"groupType":form[1].value;,
+				"groupMembers":[{"accountName":"SSSSSSS","memberAccountNumber":"31312312"},{"accountName":"PPPPPPPPPPPPPP","memberAccountNumber":"23423423432"}],
+	    			"creatorAccountNumber":"892749724797"
+			}};
 			console.log("validation success");
-			mainRt.createGroupRoute();
+			mainRt.createGroupRoute(reqPayload);
 		}else{
 			console.log("validation fail");
 		}
