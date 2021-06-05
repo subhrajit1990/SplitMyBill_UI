@@ -42,7 +42,7 @@ class CommonFunctions{
 		}catch(err){
 			console.log(err);
 		}
-		retunr finalData;
+		return finalData;
 	}
 }
  
