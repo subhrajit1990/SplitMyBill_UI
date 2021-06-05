@@ -75,17 +75,17 @@ SMB.bootStrapJSOps = new function(){
 	    			"creatorAccountNumber":"892749724797"
 			}};
 			groupCreation(reqPayload)
-			
+		}else{
+			console.log("validation fail");
+		}
 		// Sample function call -- Ends
 	}
 	
 	async function groupCreation(reqPayload){
 		var mainRt = new MainRoute();
 		const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
-           		console.log(creationGroupRes);
-		}else{
-			console.log("validation fail");
-		}
+           	console.log(creationGroupRes);
+		
 	}
 }
 
