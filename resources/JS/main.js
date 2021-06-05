@@ -21,7 +21,7 @@ SMB.bootStrapJSOps = new function(){
 			 navbarCollapsible.classList.add('navbar-shrink');
 	}
 		
-		this.navigation = function{
+		this.navigation = function(){
 		
 		// Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
