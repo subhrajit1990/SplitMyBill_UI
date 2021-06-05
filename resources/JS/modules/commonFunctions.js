@@ -14,8 +14,25 @@ class CommonFunctions{
 	}
 
 
-	async serverCall(uri,extraParameters){
-		const headers = {
+	
+	
+	
+	
+	async function loadJson(url,data) {
+  let response = await fetch(url,data);
+  if (response.status == 200) {
+    return response.json();
+  } else {
+    throw new HttpError(response);
+  }
+}
+
+// Ask for a user name until github returns a valid user
+async serverCall(uri,extraParameters) {
+
+  let finalFetchData;
+	
+	const headers = {
 			headers:{
 	    			'Content-Type': 'application/json',
 	     			'Accept': 'application/json',
@@ -23,27 +40,31 @@ class CommonFunctions{
 		    		'masterTxnRefNo': this.genMasterTxnRefNo(),
 			}
 	    	}
-		
-		
-		/* const fetchValue = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
-    		.then(response => await response.json())
-  		.then(json => {
-    			console.log('parsed json', json); // access json.body here
-			return json;
-  		})
-    		.catch(error => console.log(error))
-		
-		return fetchValue; */
-		
-		let finalData = "";
-		try{
-		let res = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers));
-        	 finalData = await res.json(); 
-		}catch(err){
-			console.log(err);
-		}
-		return finalData;
-	}
+	
+  while(true) {
+   
+    try {
+      finalFetchData = await loadJson('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers));
+      break; // no error, exit loop
+    } catch(err) {
+      if (err instanceof HttpError && err.response.status == 404) {
+        // loop continues after the alert
+        console.log( " 404 ");
+      } else {
+        // unknown error, rethrow
+        throw err;
+      }
+    }
+  }
+
+
+  console.log(finalFetchData);
+  return finalFetchData;
+}
+
+	
+	
+	
 }
  
 export default CommonFunctions
