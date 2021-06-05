@@ -47,7 +47,7 @@ async serverCall(uri,extraParameters) {
       finalFetchData = await loadJson('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers));
       break; // no error, exit loop
     } catch(err) {
-      if (err instanceof HttpError && err.response.status == 404) {
+      if ( err.response.status == 404) {
         // loop continues after the alert
         console.log( " 404 ");
       } else {
