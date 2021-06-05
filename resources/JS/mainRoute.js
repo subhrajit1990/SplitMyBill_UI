@@ -22,15 +22,9 @@ class MainRoute{
 	   }
 	return validateFormflag;
    }
-  createGroupRoute(){
+  createGroupRoute(payLoad){
  	let creationGroupStatus = false;
 	try{
-		const payLoad = {"createGroupRequest":{
-			"groupName":"ABC",
-			"groupType":"asdasd",
-			"groupMembers":[{"accountName":"SSSSSSS","memberAccountNumber":"31312312"},{"accountName":"PPPPPPPPPPPPPP","memberAccountNumber":"23423423432"}],
-	    	"creatorAccountNumber":"892749724797"
-		}};
    		const group = new createGroup( payLoad );
    		var status = group.groupCreation();
 		console.log( status  );
