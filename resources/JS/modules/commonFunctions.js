@@ -23,8 +23,13 @@ class CommonFunctions{
 		    		'masterTxnRefNo': this.genMasterTxnRefNo(),
 			}
 	    	}
-		const fetchPromise =  fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
-    		fetchPromise.then(response => { return response.json();});
+		return fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
+    		.then(response => response.json())
+  		.then(json => {
+    			console.log('parsed json', json); // access json.body here
+			return json;
+  		})
+    		.catch(error => console.log(error))
 
 	}
 }
