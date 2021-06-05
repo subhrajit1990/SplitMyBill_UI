@@ -48,7 +48,7 @@ SMB.bootStrapJSOps = new function(){
 		
 	}
 	
-	async formValidation = function(){
+	formValidation = function(){
 		// Sample request payload construction -- Starts
 		var form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
 		form_validator_check = {
@@ -74,13 +74,18 @@ SMB.bootStrapJSOps = new function(){
 				"groupMembers":[{"accountName":"SSSSSSS","memberAccountNumber":"31312312"},{"accountName":"PPPPPPPPPPPPPP","memberAccountNumber":"23423423432"}],
 	    			"creatorAccountNumber":"892749724797"
 			}};
+			groupCreation(reqPayload)
 			
-			const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
-            console.log(creationGroupRes);
+		// Sample function call -- Ends
+	}
+	
+	async function groupCreation(reqPayload){
+		var mainRt = new MainRoute();
+		const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
+           		console.log(creationGroupRes);
 		}else{
 			console.log("validation fail");
 		}
-		// Sample function call -- Ends
 	}
 }
 
