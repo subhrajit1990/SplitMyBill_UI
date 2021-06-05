@@ -12,7 +12,7 @@ export default class CreateGroup extends CommonFunctions {
 	    method: 'POST',
 	    body: JSON.stringify(this.params)
   	};
-	return this.serverCall().then(response =>  retrun response);
+	return this.serverCall().then(response => { retrun response;});
   	//return this.serverCall("expenses/api/createGroup",extraParameters);
 		
 	}
