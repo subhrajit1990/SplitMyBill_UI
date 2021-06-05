@@ -10907,7 +10907,9 @@ html {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+     color: #fff;
+    font-family: Pacifico;
+    text-transform: initial;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
