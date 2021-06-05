@@ -24,7 +24,7 @@ class CommonFunctions{
 			}
 	    	}
 		return fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
-    		.then(response => response.json())
+    		.then(response => { return response.json();})
     		.catch(error => console.log(error))
 
 	}
