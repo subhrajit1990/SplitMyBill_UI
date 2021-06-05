@@ -50,13 +50,13 @@ SMB.bootStrapJSOps = new function(){
 	
 	formValidation = function(){
 		// Sample request payload construction -- Starts
-		var form = document.getElementsByClassName("inputType"),
+		var form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
 		form_validator_check = {
-            		lastname: {
-                		verify: ["nullCheck","lastname"],
-                		message: ["Please enter the last name","Please enter 4 digits last name"]
+            		inputGroupName: {
+                		verify: ["nullCheck"],
+                		message: ["Please enter the group name"]
             		},
-            		firstname: {
+            		inputGroupType: {
                 		verify: ["nullCheck"],
                 		message: ["Please enter the first name"]
             		}
