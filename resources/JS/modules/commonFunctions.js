@@ -26,7 +26,7 @@ class CommonFunctions{
 		
 		
 		const fetchValue = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
-    		.then(response => response.json())
+    		.then(response => await response.json())
   		.then(json => {
     			console.log('parsed json', json); // access json.body here
 			return json;
