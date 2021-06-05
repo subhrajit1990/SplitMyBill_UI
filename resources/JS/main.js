@@ -85,6 +85,15 @@ SMB.bootStrapJSOps = new function(){
 		var mainRt = new MainRoute();
 		const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
            	console.log(creationGroupRes);
+		if(creationGroupRes.hasOwnProperty("ResponseHeader")){ 
+			if(creationGroupRes.ResponseHeader.ResponseCode === "0"){ 
+				console.log("Show Success ")
+			} else {  
+				console.log("Show Error ") 
+			}
+		} else { 
+			console.log("No Reponse or error occurred"); 
+		}
 		
 	}
 }
