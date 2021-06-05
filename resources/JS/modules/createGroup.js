@@ -6,16 +6,14 @@ export default class CreateGroup extends CommonFunctions {
 	}
 
 	async groupCreation(){
-
-	const extraParameters = {
-		
-	    method: 'POST',
-	    body: JSON.stringify(this.params)
-  	};
-	let fethData = await this.serverCall("expenses/api/createGroup",extraParameters).then(response => {
-		 console.log(response); 
-		 return response;
-	 });
-    return fethData;
+		const extraParameters = {			
+		    method: 'POST',
+		    body: JSON.stringify(this.params)
+	  	};
+		let fethData = await this.serverCall("expenses/api/createGroup",extraParameters).then(response => {
+			 console.log(response); 
+			 return response;
+		 });
+	    return fethData;
+		}
 	}
-}
