@@ -75,7 +75,7 @@ SMB.bootStrapJSOps = new function(){
 	    			"creatorAccountNumber":"892749724797"
 			}};
 			
-			const creationGroupRes = mainRt.createGroupRoute(reqPayload);
+			const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
             console.log(creationGroupRes);
 		}else{
 			console.log("validation fail");
