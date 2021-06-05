@@ -38,7 +38,7 @@ class CommonFunctions{
 		let finalData = "";
 		try{
 		let res = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers));
-        	 finalData = await response.json(); 
+        	 finalData = await res.json(); 
 		}catch(err){
 			console.log(err);
 		}
