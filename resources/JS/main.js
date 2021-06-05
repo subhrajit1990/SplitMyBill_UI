@@ -5,7 +5,7 @@ if (typeof (SMB) == "undefined") {
 SMB.bootStrapJSOps = new function(){	
     	this.init = function(){
 		// doSomething
-		 this.navbarShrink();
+		this.navbarShrink();
 		this.navigation();
    	 }
 	
@@ -22,31 +22,31 @@ SMB.bootStrapJSOps = new function(){
 		}
 	}
 		
-		this.navigation = function(){
+	this.navigation = function(){
 		
 		// Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            offset: 72,
-        });
-    };
+        const mainNav = document.body.querySelector('#mainNav');
+        if (mainNav) {
+            new bootstrap.ScrollSpy(document.body, {
+                target: '#mainNav',
+                offset: 72,
+            });
+        };
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
+        // Collapse responsive navbar when toggler is visible
+        const navbarToggler = document.body.querySelector('.navbar-toggler');
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
         });
-    });
 		
-		}
+	}
 	
 	formValidation = function(){
 		// Sample request payload construction -- Starts
@@ -77,5 +77,3 @@ SMB.bootStrapJSOps = new function(){
 }
 
 bootStrapJS = SMB.bootStrapJSOps
-
-
