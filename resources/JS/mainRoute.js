@@ -23,16 +23,16 @@ class MainRoute{
 	return validateFormflag;
    }
   async createGroupRoute(payLoad){
- 	let creationGroupStatus = false;
+ 	let creationGroupRes = "";
 	try{
    		const group = new createGroup( payLoad );
-   		var status = await group.groupCreation();
-		console.log( status  );
+   		var creationGroupRes = await group.groupCreation();
+		console.log( creationGroupRes  );
 		
 	} catch(err){
 		throw new Error("Exception happened during group creation");
 	}
-	return creationGroupStatus;
+	return creationGroupRes;
   }
 
   addMemberToGroupRoute(){
