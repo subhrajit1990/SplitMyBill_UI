@@ -14,7 +14,7 @@ class CommonFunctions{
 	}
 
 
-	serverCall(uri,extraParameters){
+	async serverCall(uri,extraParameters){
 		const headers = {
 			headers:{
 	    			'Content-Type': 'application/json',
