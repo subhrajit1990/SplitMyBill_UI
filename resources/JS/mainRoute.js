@@ -26,7 +26,7 @@ class MainRoute{
  	let creationGroupRes = "";
 	try{
    		const group = new createGroup( payLoad );
-   		var creationGroupRes = await group.groupCreation();
+   		 creationGroupRes = await group.groupCreation();
 		console.log( creationGroupRes  );
 		
 	} catch(err){
