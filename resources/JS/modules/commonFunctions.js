@@ -25,7 +25,7 @@ class CommonFunctions{
 	    	}
 		
 		
-		const fetchValue = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
+		/* const fetchValue = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers))
     		.then(response => await response.json())
   		.then(json => {
     			console.log('parsed json', json); // access json.body here
@@ -33,8 +33,16 @@ class CommonFunctions{
   		})
     		.catch(error => console.log(error))
 		
-		return fetchValue;
-
+		return fetchValue; */
+		
+		let finalData = "";
+		try{
+		let res = await fetch('https://sharemybillapi.herokuapp.com/BillManager/'+uri,Object.assign(extraParameters,headers));
+        	 finalData = await response.json(); 
+		}catch(err){
+			console.log(err);
+		}
+		retunr finalData;
 	}
 }
  
