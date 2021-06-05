@@ -52,15 +52,15 @@ SMB.bootStrapJSOps = new function(){
 		// Sample request payload construction -- Starts
 		var form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
 		form_validator_check = {
-            		inputGroupName: {
-                		verify: ["nullCheck"],
-                		message: ["Please enter the group name"]
-            		},
-            		inputGroupType: {
-                		verify: ["nullCheck"],
-                		message: ["Please enter the first name"]
-            		}
-        	};
+            	inputGroupName: {
+                	verify: ["nullCheck"],
+                	message: ["Please enter the group name"]
+            	},
+            	inputGroupType: {
+                	verify: ["nullCheck"],
+                	message: ["Please enter the first name"]
+            	}
+        };
 		// Sample request payload construction -- Ends
 		
 		// Sample function call -- Starts
@@ -76,7 +76,7 @@ SMB.bootStrapJSOps = new function(){
 			}};
 			
 			const creationGroupRes = mainRt.createGroupRoute(reqPayload);
-             console.log(creationGroupRes);
+            console.log(creationGroupRes);
 		}else{
 			console.log("validation fail");
 		}
