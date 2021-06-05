@@ -18,7 +18,7 @@ class CommonFunctions{
 	
 	
 	
-	async function loadJson(url,data) {
+	async  loadJson(url,data) {
   let response = await fetch(url,data);
   if (response.status == 200) {
     return response.json();
