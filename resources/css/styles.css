@@ -6732,6 +6732,14 @@ textarea.form-control-lg {
   align-items: center !important;
 }
 
+.align-items-left {
+  align-items: left !important;
+}
+
+.align-items-right {
+  align-items: right !important;
+}
+
 .align-items-baseline {
   align-items: baseline !important;
 }
