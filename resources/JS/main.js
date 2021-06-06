@@ -111,6 +111,16 @@ SMB.bootStrapJSOps = new function(){
 	async function modalOpenData(reqPayload){
 		let mainRt = new MainRoute();
 		const fetchGroupRes = await mainRt.fetchGroupRoute(reqPayload);
+		if(fetchGroupRes.ResponseHeader.ResponseCode === "0"){
+			let tempRes = fetchGroupRes.fetchGroupsResponse.groups; 
+			tempRes.map((ele, index) => { 
+				debugger; 
+				console.log(ele[index]); 
+			});
+		} else {
+			console.log("No data found");
+		}
+		
 		
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
