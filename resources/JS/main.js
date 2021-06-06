@@ -50,7 +50,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	createGroupFormValidation = function(){
 		// Sample request payload construction -- Starts
-		var form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
+		let form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
 		form_validator_check = {
             	inputGroupName: {
                 	verify: ["nullCheck"],
@@ -64,11 +64,11 @@ SMB.bootStrapJSOps = new function(){
 		// Sample request payload construction -- Ends
 		
 		// Sample function call -- Starts
-		var mainRt = new MainRoute();
+		let mainRt = new MainRoute();
 		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
             console.log("validation success");
-			var reqPayload = {"createGroupRequest":{
+			let reqPayload = {"createGroupRequest":{
 				"groupName":form[0].value,
 				"groupType":form[1].value,
 				"groupMembers":[{"accountName":"SSSSSSS","memberAccountNumber":"31312312"},{"accountName":"PPPPPPPPPPPPPP","memberAccountNumber":"23423423432"}],
@@ -82,7 +82,7 @@ SMB.bootStrapJSOps = new function(){
 	}
 	
 	async function groupCreation(reqPayload){
-		var mainRt = new MainRoute();
+		let mainRt = new MainRoute();
 		const creationGroupRes = await mainRt.createGroupRoute(reqPayload);
            	console.log(creationGroupRes);
 		if(creationGroupRes.hasOwnProperty("ResponseHeader")){ 
@@ -99,8 +99,14 @@ SMB.bootStrapJSOps = new function(){
 	
  	modalOpen = function(){
 		
-		/*let att = document.createAttribute("data-bs-target");       // Create a "class" attribute
-		att.value = "#portfolioModal2"; */
+		let reqPayload = {"fetchGroupsRequest":{
+	
+			"creatorAccountNumber":"892749724797"
+}		}
+		
+		let mainRt = new MainRoute();
+		const creationGroupRes = await mainRt.fetchGroupRoute(reqPayload);
+		
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 	}
