@@ -102,7 +102,10 @@ SMB.bootStrapJSOps = new function(){
 	}
 	
  	createFetchGroupModal = function(){
-		
+		let cardBodyData = document.getElementById("cardBody");
+		if(cardBodyData.innerHTML != ""){
+			cardBodyData.innerHTML = "";
+		}
 		let reqPayload = {"fetchGroupsRequest":{
 	
 			"creatorAccountNumber":"892749724797"
