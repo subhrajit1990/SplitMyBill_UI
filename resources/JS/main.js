@@ -8,6 +8,13 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 		document.getElementById("cardBody").innerHTML = "";
+		
+		let tempGroupForm = document.getElementById("createGroupForm");
+		if (tempGroupForm.style.display === "none") {
+    			tempGroupForm.style.display = "block";
+  		} else {
+    			tempGroupForm.style.display = "none";
+  		}
 	
 		this.navbarShrink();
 		this.navigation();
@@ -134,7 +141,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	createGroupForm = function(){
 		document.getElementById("cardBody").innerHTML = "";
-		var tempGroupForm = document.getElementById("createGroupForm");
+		let tempGroupForm = document.getElementById("createGroupForm");
 		tempGroupForm.style.display = "block";
 	}
 }
