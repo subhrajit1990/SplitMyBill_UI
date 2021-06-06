@@ -134,8 +134,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	createGroupForm = function(){
 		document.getElementById("cardBody").innerHTML = "";
-		let tempGroupForm = document.getElementById("createGroupForm");
-		tempGroupForm.style.display = "block";
+		this.resetGroupForm();
 	}
 	
 	this.resetGroupForm = function(){
