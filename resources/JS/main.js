@@ -97,7 +97,7 @@ SMB.bootStrapJSOps = new function(){
 		
 	}
 	
-	function modalOpen(){
+ 	modalOpen = function(){
 		
 		var att = document.createAttribute("data-bs-target");       // Create a "class" attribute
 		att.value = "#portfolioModal2"; 
