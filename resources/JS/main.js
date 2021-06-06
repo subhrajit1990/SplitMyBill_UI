@@ -131,6 +131,12 @@ SMB.bootStrapJSOps = new function(){
 		}
 	
 	}
+	
+	createGroupForm = function(){
+		document.getElementById("cardBody").innerHtml = "";
+		var tempGroupForm = document.getElementById("createGroupForm");
+		tempGroupForm.style.display = "block";
+	}
 }
 
 bootStrapJS = SMB.bootStrapJSOps
