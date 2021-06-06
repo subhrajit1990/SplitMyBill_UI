@@ -96,6 +96,13 @@ SMB.bootStrapJSOps = new function(){
 		}
 		
 	}
+	
+	function modalOpen(){
+		
+		var att = document.createAttribute("data-bs-target");       // Create a "class" attribute
+		att.value = "#portfolioModal2"; 
+		document.getElementById("modalOpen").setAttributeNode(att);
+	}
 }
 
 bootStrapJS = SMB.bootStrapJSOps
