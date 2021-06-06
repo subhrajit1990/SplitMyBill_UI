@@ -101,18 +101,18 @@ SMB.bootStrapJSOps = new function(){
 		
 	}
 	
- 	modalOpen = function(){
+ 	createFetchGroupModal = function(){
 		
 		let reqPayload = {"fetchGroupsRequest":{
 	
 			"creatorAccountNumber":"892749724797"
 		}
 				 }
-		modalOpenData(reqPayload);
+		createFetchGroupData(reqPayload);
 		
 	}
 	
-	async function modalOpenData(reqPayload){
+	async function createFetchGroupData(reqPayload){
 		let mainRt = new MainRoute();
 		const fetchGroupRes = await mainRt.fetchGroupRoute(reqPayload);
 		if(fetchGroupRes.ResponseHeader.ResponseCode === "0"){
