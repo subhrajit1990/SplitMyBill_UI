@@ -5,6 +5,9 @@ if (typeof (SMB) == "undefined") {
 SMB.bootStrapJSOps = new function(){	
     	this.init = function(){
 		// doSomething
+		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
+		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
+	
 		this.navbarShrink();
 		this.navigation();
    	 }
@@ -122,11 +125,6 @@ SMB.bootStrapJSOps = new function(){
 		} else {
 			console.log("No data found");
 		}
-		
-		
-		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
-		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
-	
 	
 	}
 }
