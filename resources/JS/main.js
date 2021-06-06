@@ -101,7 +101,10 @@ SMB.bootStrapJSOps = new function(){
 	}
 	
  	createFetchGroupModal = function(){
-		resetGroupForm();
+		let tempGroupForm = document.getElementById("createGroupForm");
+		if (tempGroupForm.style.display === "block") {
+ 			tempGroupForm.style.display = "none";
+  		}
 		let cardBodyData = document.getElementById("cardBody");
 		if(cardBodyData.innerHTML != ""){
 			cardBodyData.innerHTML = "";
