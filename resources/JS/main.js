@@ -103,6 +103,7 @@ SMB.bootStrapJSOps = new function(){
 	
 			"creatorAccountNumber":"892749724797"
 		}
+				 }
 		modalOpenData(reqPayload);
 		
 	}
