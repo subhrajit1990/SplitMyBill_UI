@@ -8,7 +8,7 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 		document.getElementById("cardBody").innerHTML = "";
-		this.resetGroupForm();
+		resetGroupForm();
 		this.navbarShrink();
 		this.navigation();
    	 }
@@ -137,7 +137,7 @@ SMB.bootStrapJSOps = new function(){
 		resetGroupForm();
 	}
 	
-	this.resetGroupForm = function(){
+	function resetGroupForm(){
 		let tempGroupForm = document.getElementById("createGroupForm");
 		if (tempGroupForm.style.display === "block") {
     			tempGroupForm.style.display = "none";
