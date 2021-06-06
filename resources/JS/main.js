@@ -108,11 +108,11 @@ SMB.bootStrapJSOps = new function(){
 			"creatorAccountNumber":"892749724797"
 		}
 				 }
-		createFetchGroupData(reqPayload);
+		createFetchGroup(reqPayload);
 		
 	}
 	
-	async function createFetchGroupData(reqPayload){
+	async function createFetchGroup(reqPayload){
 		let mainRt = new MainRoute();
 		const fetchGroupRes = await mainRt.fetchGroupRoute(reqPayload);
 		if(fetchGroupRes.ResponseHeader.ResponseCode === "0"){
