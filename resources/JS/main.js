@@ -10,11 +10,9 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("cardBody").innerHTML = "";
 		
 		let tempGroupForm = document.getElementById("createGroupForm");
-		if (tempGroupForm.style.display === "none") {
-    			tempGroupForm.style.display = "block";
-  		} else {
+		if (tempGroupForm.style.display === "block") {
     			tempGroupForm.style.display = "none";
-  		}
+  		} 
 	
 		this.navbarShrink();
 		this.navigation();
