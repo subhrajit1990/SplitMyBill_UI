@@ -8,7 +8,6 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 		document.getElementById("cardBody").innerHTML = "";
-		resetGroupForm();
 		this.navbarShrink();
 		this.navigation();
    	 }
