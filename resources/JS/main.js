@@ -54,7 +54,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	createGroupFormValidation = function(){
 		// Sample request payload construction -- Starts
-		let form = document.getElementById("splitMyBillModal").getElementsByTagName("input"),
+		let form = document.getElementById("createGroupForm").getElementsByTagName("input"),
 		form_validator_check = {
             	inputGroupName: {
                 	verify: ["nullCheck"],
