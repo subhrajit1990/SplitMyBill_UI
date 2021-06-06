@@ -16,4 +16,16 @@ export default class CreateGroup extends CommonFunctions {
 		 });
 	    return fethData;
 		}
+	async fetchGroup(){
+		const extraParameters = {			
+		    method: 'POST',
+		    body: JSON.stringify(this.params)
+	  	};
+		let fethData = await this.serverCall("expenses/api/fetchGroups",extraParameters).then(response => {
+			 console.log(response); 
+			 return response;
+		 });
+	    return fethData;
+		}
+	
 	}
