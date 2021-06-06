@@ -114,7 +114,9 @@ SMB.bootStrapJSOps = new function(){
 		if(fetchGroupRes.ResponseHeader.ResponseCode === "0"){
 			let tempRes = fetchGroupRes.fetchGroupsResponse.groups; 
 			tempRes.map((ele, index) => { 
-				debugger; 
+				let tempDiv = "<div class='d-flex align-items-center justify-content-between mb-4'><div class='d-flex align-items-center flex-shrink-0 me-3'>    <div class='avatar avatar-xl me-3 bg-gray-200'><img class='avatar-img img-fluid' src='' alt=''></div><div class='d-flex flex-column fw-bold'><a class='text-dark line-height-normal mb-1' href='#!'>"+ele.groupName+"</a><div class='small text-muted line-height-normal'>"+ele.groupType+"</div><div class='small text-muted line-height-normal'>"+ele.createdDt+"</div></div></div></div>";
+				document.getElementById("cardBody").innerHTML+=tempDiv;
+
 				console.log(ele[index]); 
 			});
 		} else {
@@ -124,6 +126,7 @@ SMB.bootStrapJSOps = new function(){
 		
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
+	
 	
 	}
 }
