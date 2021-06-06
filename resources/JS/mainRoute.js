@@ -35,6 +35,19 @@ class MainRoute{
 	return creationGroupRes;
   }
 
+async fetchGroupRoute(payLoad){
+ let fetchGroupRes = "";
+	try{
+   		const group = new createGroup( payLoad );
+   		 fetchGroupRes = await group.fetchGroup();
+		console.log( fetchGroupRes  );
+		
+	} catch(err){
+		throw new Error("Exception happened during group fetch");
+	}
+	return fetchGroupRes;
+}
+
   addMemberToGroupRoute(){
  	let addMemberStatus = false;
 	try{
