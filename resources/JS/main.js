@@ -5,7 +5,7 @@ if (typeof (SMB) == "undefined") {
 SMB.bootStrapJSOps = new function(){	
     	this.init = function(){
 		// doSomething
-		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
+		document.getElementById("modalOpen").setAttribute("data-bs-target","#fetchCreateGroupModal");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 		document.getElementById("cardBody").innerHTML = "";
 		this.navbarShrink();
