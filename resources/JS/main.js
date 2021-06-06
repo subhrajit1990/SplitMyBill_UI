@@ -102,13 +102,18 @@ SMB.bootStrapJSOps = new function(){
 		let reqPayload = {"fetchGroupsRequest":{
 	
 			"creatorAccountNumber":"892749724797"
-}		}
+		}
+		modalOpenData(reqPayload);
 		
+	}
+	
+	async function modalOpenData(reqPayload){
 		let mainRt = new MainRoute();
 		const creationGroupRes = await mainRt.fetchGroupRoute(reqPayload);
 		
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
+	
 	}
 }
 
