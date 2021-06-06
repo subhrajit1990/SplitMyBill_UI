@@ -90,9 +90,10 @@ SMB.bootStrapJSOps = new function(){
            	console.log(creationGroupRes);
 		if(creationGroupRes.hasOwnProperty("ResponseHeader")){ 
 			if(creationGroupRes.ResponseHeader.ResponseCode === "0"){ 
-				console.log("Show Success ")
+				console.log("Show Success ");
+				createFetchGroupModal();
 			} else {  
-				console.log("Show Error ") 
+				console.log("Show Error ");
 			}
 		} else { 
 			console.log("No Reponse or error occurred"); 
