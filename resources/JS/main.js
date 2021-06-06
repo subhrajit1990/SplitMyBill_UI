@@ -110,7 +110,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	async function modalOpenData(reqPayload){
 		let mainRt = new MainRoute();
-		const creationGroupRes = await mainRt.fetchGroupRoute(reqPayload);
+		const fetchGroupRes = await mainRt.fetchGroupRoute(reqPayload);
 		
 		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
 		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
