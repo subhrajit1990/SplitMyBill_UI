@@ -99,9 +99,10 @@ SMB.bootStrapJSOps = new function(){
 	
  	modalOpen = function(){
 		
-		var att = document.createAttribute("data-bs-target");       // Create a "class" attribute
-		att.value = "#portfolioModal2"; 
-		document.getElementById("modalOpen").setAttributeNode(att);
+		/*let att = document.createAttribute("data-bs-target");       // Create a "class" attribute
+		att.value = "#portfolioModal2"; */
+		document.getElementById("modalOpen").setAttribute("data-bs-target","#portfolioModal2");
+		document.getElementById("modalOpen").setAttribute("data-bs-toggle","modal");
 	}
 }
 
