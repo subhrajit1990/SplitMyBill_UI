@@ -133,7 +133,7 @@ SMB.bootStrapJSOps = new function(){
 	}
 	
 	createGroupForm = function(){
-		document.getElementById("cardBody").innerHtml = "";
+		document.getElementById("cardBody").innerHTML = "";
 		var tempGroupForm = document.getElementById("createGroupForm");
 		tempGroupForm.style.display = "block";
 	}
