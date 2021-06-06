@@ -141,7 +141,9 @@ SMB.bootStrapJSOps = new function(){
 		let tempGroupForm = document.getElementById("createGroupForm");
 		if (tempGroupForm.style.display === "block") {
     			tempGroupForm.style.display = "none";
-  		} 
+  		} else {
+			tempGroupForm.style.display = "block";
+		}
 	}
 }
 
