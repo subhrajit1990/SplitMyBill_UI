@@ -1,6 +1,6 @@
 //import { Timer } from "./easytimer.min.js";
 export default class CardPlay {
-	var timercount = new Timer();
+	
 	constructor(initiateTimer,time){
 		//var self = this;
 		this.initiateTimer = initiateTimer;
@@ -13,11 +13,9 @@ export default class CardPlay {
 		this.matchCardnumber = 0;
 		this.movescount = 0;
 		this.numberOfCards=0;
-		this.cardSymbols;
-		
-		
+		this.cardSymbols;			
 	}
-
+	var timercount = new Timer();
 	initiateGame(){
 		this.cardSymbols = this.fetchCards();
 		this.generatePlayGround();
