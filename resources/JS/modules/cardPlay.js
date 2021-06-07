@@ -150,11 +150,12 @@ export default class CardPlay {
 		
 	}
        timer() {
+	        let self = this;
 		console.log("timer");
     		(this.timercount).start();
     		(this.timercount).addEventListener('secondsUpdated', function (e) {
         		let basicUsagetimer = document.querySelector('#basicUsage');
-        		basicUsagetimer.textContent = (this.timercount).getTimeValues().toString();
+        		basicUsagetimer.textContent = (self.timercount).getTimeValues().toString();
     		});
 	};
 	fetchCards(){	
