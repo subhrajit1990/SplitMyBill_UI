@@ -1,12 +1,8 @@
-//import { Timer } from "./easytimer.min.js";
 export default class CardPlay {
 	
 	constructor(initiateTimer,time){
-		//var self = this;
 		this.initiateTimer = initiateTimer;
 		this.time = time;
-		
-
 		this.visibleCard;
 		this.firstCard;
 		this.secondCard;
@@ -158,7 +154,7 @@ export default class CardPlay {
     		(this.timercount).start();
     		(this.timercount).addEventListener('secondsUpdated', function (e) {
         		let basicUsagetimer = document.querySelector('#basicUsage');
-        		basicUsagetimer.textContent = timercount.getTimeValues().toString();
+        		basicUsagetimer.textContent = (this.timercount).getTimeValues().toString();
     		});
 	};
 	fetchCards(){	
