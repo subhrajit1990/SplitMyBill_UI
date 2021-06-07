@@ -169,8 +169,13 @@ SMB.bootStrapJSOps = new function(){
 	
 	startMyGame = function(){
 		let mainRt = new MainRoute();
-		
 		mainRt.gamePlay("timer", 180);
+		let tempPlayGroundId = document.getElementById("playGround");
+		if (tempPlayGroundId.style.display === "none") {
+    			tempPlayGroundId.style.display = "block";
+  		} else {
+			tempPlayGroundId.style.display = "none";
+		}
 	}
 }
 
