@@ -133,9 +133,9 @@ export default class CardPlay {
 	checkForMatch(item){
 		console.log("matched");
 		let card = {
-        		id: self.visibleCard.getAttribute('id'),
-        		name: self.visibleCard.getAttribute('name'),
-        		cardIsOpen: self.visibleCard.classList.contains('open')
+        		id: this.visibleCard.getAttribute('id'),
+        		name: this.visibleCard.getAttribute('name'),
+        		cardIsOpen: this.visibleCard.classList.contains('open')
     		};
     	return (item.name === card.name && item.id !== card.id && card.cardIsOpen);
 	};
