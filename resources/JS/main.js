@@ -152,6 +152,18 @@ SMB.bootStrapJSOps = new function(){
 	
 	fetchIndiGroupBills = function(self){
 		
+		let seq = selg.getAttribute("sequnce"),
+		    groupId=self.getAttribute("groupId");
+		
+		fetchIndividualGroupBills(seq,groupId);
+		
+		
+	}
+	
+	async function fetchIndividualGroupBills(...args){
+		let mainRt = new MainRoute();
+		// call the individual group bills service
+		
 	}
 }
 
