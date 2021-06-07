@@ -93,7 +93,7 @@ export default class CardPlay {
             		this.gameOver();
        		}
         	this.firstCard = tempCard;
-        	this.secondCard = self.visibleCard;
+        	this.secondCard = this.visibleCard;
         	this.visibleCard = null;
         	this.resetPlayground();
     	}
