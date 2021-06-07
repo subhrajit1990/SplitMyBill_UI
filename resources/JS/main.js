@@ -165,6 +165,11 @@ SMB.bootStrapJSOps = new function(){
 		// call the individual group bills service
 		
 	}
+	
+	startMyGame = function(){
+		let mainRt = new MainRoute();
+		mainRt.gamePlay("timer", 180);
+	}
 }
 
 bootStrapJS = SMB.bootStrapJSOps
