@@ -152,7 +152,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	fetchIndiGroupBills = function(self){
 		
-		let seq = selg.getAttribute("sequnce"),
+		let seq = self.getAttribute("sequnce"),
 		    groupId=self.getAttribute("groupId");
 		
 		fetchIndividualGroupBills(seq,groupId);
