@@ -2,9 +2,10 @@
 export default class CardPlay {
 	
 	constructor(initiateTimer,time){
+		var self = this;
 		this.initiateTimer = initiateTimer;
 		this.time = time;
-
+		
 
 		this.visibleCard;
 		this.firstCard;
@@ -39,7 +40,7 @@ export default class CardPlay {
         		cardItem.setAttribute('name', cardClassName);
         		cardItem.classList.add("card");
    			cardItem.onclick = function() {
-    				this.playGame(this);
+    				self.playGame(this);
 			};
         		let symbolsItem = document.createElement("i");
         		symbolsItem.classList.add("fa");
