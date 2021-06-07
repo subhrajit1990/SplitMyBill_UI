@@ -13,9 +13,10 @@ export default class CardPlay {
 		this.matchCardnumber = 0;
 		this.movescount = 0;
 		this.numberOfCards=0;
-		this.cardSymbols;			
+		this.cardSymbols;	
+		this.timercount = new Timer();
 	}
-	var timercount = new Timer();
+	
 	initiateGame(){
 		this.cardSymbols = this.fetchCards();
 		this.generatePlayGround();
@@ -154,8 +155,8 @@ export default class CardPlay {
 	}
        timer() {
 		console.log("timer");
-    		timercount.start();
-    		timercount.addEventListener('secondsUpdated', function (e) {
+    		(this.timercount).start();
+    		(this.timercount).addEventListener('secondsUpdated', function (e) {
         		let basicUsagetimer = document.querySelector('#basicUsage');
         		basicUsagetimer.textContent = timercount.getTimeValues().toString();
     		});
