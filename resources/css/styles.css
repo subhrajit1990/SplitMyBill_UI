@@ -11112,7 +11112,7 @@ html {
 
 .score-panel {
     text-align: left;
-    width: 345px;
+    width: 100%;
     margin-bottom: 10px;
 }
 .score-panel .restart {
