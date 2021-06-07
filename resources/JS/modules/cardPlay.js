@@ -26,7 +26,7 @@ export default class CardPlay {
 
 	generatePlayGround() {
 		console.log("1. generating play ground");
-		let cardItemList = this.shuffleCards(self.cardSymbols);
+		let cardItemList = this.shuffleCards(this.cardSymbols);
    		let restart = document.querySelector(".restart");
 		restart.onclick = function() {
     			self.playAgain();
