@@ -110,7 +110,7 @@ export default class CardPlay {
         		let modal = document.querySelector('.popup');
         		let close = document.querySelector('.close');
         		document.querySelector("#moves").textContent = self.movescount;
-        		document.querySelector('#timer').textContent = timercount.getTimeValues().toString();
+        		document.querySelector('#timer').textContent = (this.timercount).getTimeValues().toString();
         		modal.style.display = "block";
         		close.onclick = function () {
             			modal.style.display = "none";
