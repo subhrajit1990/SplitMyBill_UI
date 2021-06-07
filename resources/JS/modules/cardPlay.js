@@ -2,7 +2,7 @@
 export default class CardPlay {
 	
 	constructor(initiateTimer,time){
-		var self = this;
+		//var self = this;
 		this.initiateTimer = initiateTimer;
 		this.time = time;
 		
@@ -29,6 +29,7 @@ export default class CardPlay {
 		console.log("1. generating play ground");
 		let cardItemList = this.shuffleCards(this.cardSymbols);
    		let restart = document.querySelector(".restart");
+		let self = this;
 		restart.onclick = function() {
     			self.playAgain();
 		};
