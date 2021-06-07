@@ -1,4 +1,4 @@
-expost default class CardPlay {
+export default class CardPlay {
 
 	constructor(initiateTimer,time){
 		this.initiateTimer = initiateTimer;
