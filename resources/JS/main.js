@@ -168,6 +168,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	startMyGame = function(){
 		let mainRt = new MainRoute();
+		new Timer();
 		mainRt.gamePlay("timer", 180);
 	}
 }
