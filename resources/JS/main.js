@@ -10,6 +10,7 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("cardBody").innerHTML = "";
 		this.navbarShrink();
 		this.navigation();
+		new Timer();
    	 }
 	
 	this.navbarShrink = function(){
@@ -168,7 +169,7 @@ SMB.bootStrapJSOps = new function(){
 	
 	startMyGame = function(){
 		let mainRt = new MainRoute();
-		new Timer();
+		
 		mainRt.gamePlay("timer", 180);
 	}
 }
