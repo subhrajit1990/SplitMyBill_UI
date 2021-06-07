@@ -39,7 +39,7 @@ export default class CardPlay {
         		cardItem.setAttribute('name', cardClassName);
         		cardItem.classList.add("card");
    			cardItem.onclick = function() {
-    				self.playGame(this);
+    				this.playGame(this);
 			};
         		let symbolsItem = document.createElement("i");
         		symbolsItem.classList.add("fa");
