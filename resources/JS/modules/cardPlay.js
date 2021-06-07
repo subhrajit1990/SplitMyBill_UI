@@ -18,8 +18,8 @@ export default class CardPlay {
 	}
 
 	initiateGame(){
-		this.cardSymbols = fetchCards();
-		generatePlayGround();
+		this.cardSymbols = this.fetchCards();
+		this.generatePlayGround();
 
 	}
 
