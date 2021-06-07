@@ -68,15 +68,15 @@ export default class CardPlay {
 		console.log("3. Game Play");
 		this.timer();
     	tempCard.classList.add('open','show');
-    	if (self.firstCard && self.secondCard) {
-        	self.firstCard.classList.remove('open','show');
-        	self.secondCard.classList.remove('open','show');
-        	self.firstCard = null;
-        	self.secondCard = null;
+    	if (this.firstCard && this.secondCard) {
+        	this.firstCard.classList.remove('open','show');
+        	this.secondCard.classList.remove('open','show');
+        	this.firstCard = null;
+        	this.secondCard = null;
     	}
-    	if (!self.visibleCard) {
-        	self.visibleCard = tempCard;
-        	self.movescount++;        
+    	if (!this.visibleCard) {
+        	this.visibleCard = tempCard;
+        	this.movescount++;        
         	this.chooseCard();
     	} else {
         	let item = {
@@ -87,21 +87,21 @@ export default class CardPlay {
         	if (this.checkForMatch(item)) {
            		tempCard.classList.add('match');
             		tempCard.removeAttribute('onclick');
-            		self.visibleCard.classList.add('match');
-            		self.visibleCard.removeAttribute('onclick');
-            		self.matchCardnumber += 1;
+            		this.visibleCard.classList.add('match');
+            		this.visibleCard.removeAttribute('onclick');
+            		this.matchCardnumber += 1;
             		this.gameOver();
        		}
-        	self.firstCard = tempCard;
-        	self.secondCard = self.visibleCard;
-        	self.visibleCard = null;
+        	this.firstCard = tempCard;
+        	this.secondCard = self.visibleCard;
+        	this.visibleCard = null;
         	this.resetPlayground();
     	}
 	}
 
     	gameOver(){
 		console.log("game over");
-		 if (self.matchCardnumber == this.numberOfCards) {
+		 if (this.matchCardnumber == this.numberOfCards) {
 			this.saveMatchScore();
         		let modal = document.querySelector('.popup');
         		let close = document.querySelector('.close');
@@ -117,6 +117,7 @@ export default class CardPlay {
 	}
 
 	resetPlayground(){
+		let self = this;
 		console.log("clear the ground");
 		setTimeout(() => {
         		if (self.firstCard) {
