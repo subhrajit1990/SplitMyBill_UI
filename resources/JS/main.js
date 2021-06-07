@@ -10,7 +10,7 @@ SMB.bootStrapJSOps = new function(){
 		document.getElementById("cardBody").innerHTML = "";
 		this.navbarShrink();
 		this.navigation();
-		new Timer();
+		
    	 }
 	
 	this.navbarShrink = function(){
