@@ -180,7 +180,7 @@ export default class CardPlay {
     		}
     		return result;
 	};
-	saveMatchScore()){
+	saveMatchScore(){
 		console.log("API call to save the match score");
 	};
 }
