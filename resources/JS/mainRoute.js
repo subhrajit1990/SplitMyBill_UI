@@ -66,8 +66,8 @@ class MainRoute{
 		return addMemberStatus;
   	}
 
-	gamePlay("timer", 180){
-		let counter = new cardPlay(); // expects in seconds
+	gamePlay(timer, time){
+		let counter = new cardPlay(timer, time); // expects in seconds
 		counter.initiateGame(); 
 	}
 }
