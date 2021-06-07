@@ -1,3 +1,4 @@
+import { Timer } from "./easytimer.min.js";
 export default class CardPlay {
 	
 	constructor(initiateTimer,time){
