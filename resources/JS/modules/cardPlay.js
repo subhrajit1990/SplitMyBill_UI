@@ -143,7 +143,7 @@ export default class CardPlay {
 	chooseCard(){
 		console.log("4. move counter");
 		let movesContainer = document.querySelector('.moves');
-    		movesContainer.textContent = self.movescount;		
+    		movesContainer.textContent = this.movescount;		
 	}
 	playAgain(){
 		console.log("once more");
