@@ -1,5 +1,5 @@
 export default class CardPlay {
-
+	var timercount = new Timer();
 	constructor(initiateTimer,time){
 		this.initiateTimer = initiateTimer;
 		this.time = time;
@@ -12,7 +12,7 @@ export default class CardPlay {
 		this.movescount = 0;
 		this.numberOfCards=0;
 		this.cardSymbols;
-		var timercount = new Timer();
+		
 	}
 
 	initiateGame(){
