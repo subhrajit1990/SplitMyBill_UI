@@ -17,12 +17,12 @@ SMB.bootStrapJSOps = new function(){
 		console.log("nav bar shrink");
 		const navbarCollapsible = document.body.querySelector('#mainNav');
         	if (!navbarCollapsible) {
-            		return;
+            	return;
         	}
         	if (window.scrollY === 0) {
-            		navbarCollapsible.classList.remove('navbar-shrink');
+            	navbarCollapsible.classList.remove('navbar-shrink');
         	} else {
-			 navbarCollapsible.classList.add('navbar-shrink');
+			 	navbarCollapsible.classList.add('navbar-shrink');
 		}
 	}
 		
@@ -56,14 +56,14 @@ SMB.bootStrapJSOps = new function(){
 		// Sample request payload construction -- Starts
 		let form = document.getElementById("createGroupForm").getElementsByTagName("input"),
 		form_validator_check = {
-            	inputGroupName: {
-                	verify: ["nullCheck"],
-                	message: ["Please enter the group name"]
-            	},
-            	inputGroupType: {
-                	verify: ["nullCheck"],
-                	message: ["Please enter the first name"]
-            	}
+            inputGroupName: {
+                verify: ["nullCheck"],
+                message: ["Please enter the group name"]
+            },
+            inputGroupType: {
+                verify: ["nullCheck"],
+                message: ["Please enter the first name"]
+            }
         };
 		// Sample request payload construction -- Ends
 		
@@ -114,8 +114,7 @@ SMB.bootStrapJSOps = new function(){
 		let reqPayload = {"fetchGroupsRequest":{
 	
 			"creatorAccountNumber":"892749724797"
-		}
-				 }
+		}}
 		createFetchGroup(reqPayload);
 		
 	}
@@ -128,7 +127,6 @@ SMB.bootStrapJSOps = new function(){
 			tempRes.map((ele, index) => { 
 				let tempDiv = "<div class='d-flex align-items-center justify-content-between mb-4 cardTile' onClick='fetchIndiGroupBills(this)' sequnce='"+index+"' groupId='"+ele.groupId+"' ><div class='d-flex align-items-center flex-shrink-0 me-3'>    <div class='avatar avatar-xl me-3 bg-gray-200'><img class='avatar-img img-fluid' src='' alt=''></div><div class='d-flex flex-column fw-bold'><a class='text-dark line-height-normal mb-1' href='#!'>"+ele.groupName+"</a><div class='small text-muted line-height-normal'>"+ele.groupType+"</div><div class='small text-muted line-height-normal'>"+ele.createdDt+"</div></div></div></div>";
 				document.getElementById("cardBody").innerHTML+=tempDiv;
-
 				console.log(ele[index]); 
 			});
 		} else {
@@ -145,20 +143,16 @@ SMB.bootStrapJSOps = new function(){
 	function resetGroupForm(){
 		let tempGroupForm = document.getElementById("createGroupForm");
 		if (tempGroupForm.style.display === "block") {
-    			tempGroupForm.style.display = "none";
+    		tempGroupForm.style.display = "none";
   		} else {
 			tempGroupForm.style.display = "block";
 		}
 	}
 	
 	fetchIndiGroupBills = function(self){
-		
 		let seq = self.getAttribute("sequnce"),
-		    groupId=self.getAttribute("groupId");
-		
-		fetchIndividualGroupBills(seq,groupId);
-		
-		
+		groupId=self.getAttribute("groupId");		
+		fetchIndividualGroupBills(seq,groupId);	
 	}
 	
 	async function fetchIndividualGroupBills(...args){
@@ -172,7 +166,7 @@ SMB.bootStrapJSOps = new function(){
 		mainRt.gamePlay("timer", 180);
 		let tempPlayGroundId = document.getElementById("playGround");
 		if (tempPlayGroundId.style.display === "none") {
-    			tempPlayGroundId.style.display = "block";
+    		tempPlayGroundId.style.display = "block";
   		} else {
 			tempPlayGroundId.style.display = "none";
 		}
