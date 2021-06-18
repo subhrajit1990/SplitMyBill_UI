@@ -22,11 +22,11 @@ export default class CardPlay {
 
 	generatePlayGround() {
 		console.log("1. generating play ground");
-		let cardItemList = this.shuffleCards(this.cardSymbols);
-   		let restart = document.querySelector(".restart");
-		let self = this;
+		let cardItemList = this.shuffleCards(this.cardSymbols),
+   		restart = document.querySelector(".restart"),
+		self = this;
 		restart.onclick = function() {
-    			self.playAgain();
+    		self.playAgain();
 		};
     	cardItemList.map(function (cardClassName, index) {        
         	let cardDeck = document.querySelector(".playGround"),
@@ -34,9 +34,9 @@ export default class CardPlay {
         	cardItem.setAttribute('id', index);
         	cardItem.setAttribute('name', cardClassName);
         	cardItem.classList.add("card");
-   			ardItem.onclick = function() {
+   			cardItem.onclick = function() {
     			self.playGame(this);
-			 };
+			};
         	let symbolsItem = document.createElement("i");
         	symbolsItem.classList.add("fa");
         	symbolsItem.classList.add(cardClassName);
