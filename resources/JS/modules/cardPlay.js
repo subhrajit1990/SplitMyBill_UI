@@ -105,7 +105,7 @@ export default class CardPlay extends CommonFunctions {
             this.saveMatchScore();
         	let modal = document.querySelector('.popup');
         	let close = document.querySelector('.close');
-        	document.querySelector("#moves").textContent = self.movescount;
+        	document.querySelector("#moves").textContent = this.movescount;
         	document.querySelector('#timer').textContent = (this.timercount).getTimeValues().toString();
         	modal.style.display = "block";
         	close.onclick = function () {
