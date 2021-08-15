@@ -163,7 +163,7 @@ export default class CardPlay extends CommonFunctions {
     	});
 	};
 
-	async fetchCards(){	
+	 fetchCards(){	
 		console.log("0.Service call to fetch the list of cards");
         /* 
         fetch the card icons from external service and hard code few icons
