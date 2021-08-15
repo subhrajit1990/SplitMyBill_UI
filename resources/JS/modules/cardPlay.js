@@ -169,13 +169,15 @@ export default class CardPlay extends CommonFunctions {
         fetch the card icons from external service and hard code few icons
         "fa-snapchat", "fa-glide", "fa-braille","fa-viadeo","fa-blind","fa-gitlab", "fa-bluetooth", "fa-shopping-bag"
          */
+		
+		// {"fetchCardsRequestWrapper":{}}
        
        const extraParameters = {            
             method: 'POST',
-	    body: JSON.stringify({"fetchCardsRequestWrapper":{}})
+	    body: JSON.stringify({"fetchGroupsRequest":{"creatorAccountNumber":"892749724797"}})
         };
 
-        let fethData = await this.serverCall("expenses/api/getCards",extraParameters,"").then(response => {
+        let fethData = await this.serverCall("expenses/api/fetchGroups",extraParameters,"").then(response => {
             console.log(response); 
             return response;
          });
