@@ -218,7 +218,28 @@ export default class CardPlay extends CommonFunctions {
       },
       {
         "cardIcon": "fa-gamepad"
-      }
+      },
+	    {
+		    "cardIcon":"fa-alarm-snooze""
+	    },
+	    {
+		    "cardIcon":"fa-fan-table"
+	    },
+	    {
+		    "cardIcon":"fa-wifi-slash"
+	    },
+	    {
+		    "cardIcon":"fa-coffee"
+	    },
+	    {
+		    "cardIcon":"fa-outlet"
+	    },
+	    {
+		    "cardIcon":"fa-spa"
+	    },
+	    {
+		    "cardIcon":"fa-umbrella-beach"
+	    }
     ]
   }
 } ;
