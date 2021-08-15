@@ -254,8 +254,15 @@ export default class CardPlay extends CommonFunctions {
             });
 
         }
-		this.numberOfCards=(fetchCardsList.length);
-		let toBeSuffleCards = this.duplicateCards(fetchCardsList,(this.numberOfCards)*2);
+		 
+	let colArr = [];
+  	for (var i = 0; i < 9; i++) {
+    		let rand = fetchCardsList[Math.floor(Math.random() * fetchCardsList.length)];
+    		colArr.push(rand);
+  	}
+		 
+		this.numberOfCards=(colArr.length);
+		let toBeSuffleCards = this.duplicateCards(colArr,(this.numberOfCards)*2);
 		return toBeSuffleCards;
 	};
 
