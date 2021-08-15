@@ -227,7 +227,7 @@ export default class CardPlay extends CommonFunctions {
         let fetchCardsList = [];
         if(fethData.ResponseHeader.ResponseCode === "0"){
 
-            (fetchCardsRes.gameCardListResponse.gameCardResponse).map((ele,index) => {
+            (fethData.gameCardListResponse.gameCardResponse).map((ele,index) => {
                 fetchCardsList.push(ele.cardIcon);
 
             });
