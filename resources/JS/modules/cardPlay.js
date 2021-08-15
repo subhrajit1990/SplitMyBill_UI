@@ -2,6 +2,7 @@ import CommonFunctions from './commonFunctions.js'
 export default class CardPlay extends CommonFunctions {
 	
 	constructor(initiateTimer,time){
+		super();
 		this.initiateTimer = initiateTimer;
 		this.time = time;
 		this.visibleCard;
