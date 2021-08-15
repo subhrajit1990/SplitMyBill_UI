@@ -182,7 +182,7 @@ export default class CardPlay extends CommonFunctions {
             return response;
          }); */
 		
-	fethData = 	{
+	let fethData = 	{
   "ResponseHeader": {
     "ResponseCode": "0",
     "httpStatus": "OK"
