@@ -169,7 +169,11 @@ export default class CardPlay {
         "fa-snapchat", "fa-glide", "fa-braille","fa-viadeo","fa-blind","fa-gitlab", "fa-bluetooth", "fa-shopping-bag"
          */
        
-        let fethData = await this.serverCall("api/fetchCards",{method: 'GET'},"M").then(response => {
+       const extraParameters = {            
+            method: 'GET'
+        };
+
+        let fethData = await this.serverCall("api/fetchCards",extraParameters,"M").then(response => {
             console.log(response); 
             return response;
          });
