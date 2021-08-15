@@ -182,67 +182,67 @@ export default class CardPlay extends CommonFunctions {
             return response;
          }); */
 		
-	let fethData = 	{
-  "ResponseHeader": {
-    "ResponseCode": "0",
-    "httpStatus": "OK"
-  },
-  "gameCardListResponse": {
-    "gameCardResponse": [
-      {
-        "cardIcon": "fa-bath"
-      },
-      {
-        "cardIcon": "fa-bell"
-      },
-      {
-        "cardIcon": "fa-binoculars"
-      },
-      {
-        "cardIcon": "fa-birthday-cake"
-      },
-      {
-        "cardIcon": "fa-blind"
-      },
-      {
-        "cardIcon": "fa-beer"
-      },
-      {
-        "cardIcon": "fa-rocket"
-      },
-      {
-        "cardIcon": "fa-ship"
-      },
-      {
-        "cardIcon": "fa-truck"
-      },
-      {
-        "cardIcon": "fa-gamepad"
-      },
-	    {
-		    "cardIcon":"fa-alarm-snooze"
-	    },
-	    {
-		    "cardIcon":"fa-fan-table"
-	    },
-	    {
-		    "cardIcon":"fa-wifi-slash"
-	    },
-	    {
-		    "cardIcon":"fa-coffee"
-	    },
-	    {
-		    "cardIcon":"fa-outlet"
-	    },
-	    {
-		    "cardIcon":"fa-spa"
-	    },
-	    {
-		    "cardIcon":"fa-umbrella-beach"
-	    }
-    ]
-  }
-} ;
+    	let fethData = 	{
+          "ResponseHeader": {
+            "ResponseCode": "0",
+            "httpStatus": "OK"
+          },
+          "gameCardListResponse": {
+            "gameCardResponse": [
+              {
+                "cardIcon": "fa-bath"
+              },
+              {
+                "cardIcon": "fa-bell"
+              },
+              {
+                "cardIcon": "fa-binoculars"
+              },
+              {
+                "cardIcon": "fa-birthday-cake"
+              },
+              {
+                "cardIcon": "fa-blind"
+              },
+              {
+                "cardIcon": "fa-beer"
+              },
+              {
+                "cardIcon": "fa-rocket"
+              },
+              {
+                "cardIcon": "fa-ship"
+              },
+              {
+                "cardIcon": "fa-truck"
+              },
+              {
+                "cardIcon": "fa-gamepad"
+              },
+        	    {
+        		    "cardIcon":"fa-alarm-snooze"
+        	    },
+        	    {
+        		    "cardIcon":"fa-fan-table"
+        	    },
+        	    {
+        		    "cardIcon":"fa-wifi-slash"
+        	    },
+        	    {
+        		    "cardIcon":"fa-coffee"
+        	    },
+        	    {
+        		    "cardIcon":"fa-outlet"
+        	    },
+        	    {
+        		    "cardIcon":"fa-spa"
+        	    },
+        	    {
+        		    "cardIcon":"fa-umbrella-beach"
+        	    }
+            ]
+          }
+        };
 
       
         let fetchCardsList = [];
