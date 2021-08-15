@@ -174,7 +174,7 @@ export default class CardPlay extends CommonFunctions {
             method: 'GET'
         };
 
-        let fethData = await this.serverCall("api/fetchCards",extraParameters,"M").then(response => {
+        let fethData = await this.serverCall("api/fetchCards",extraParameters,"").then(response => {
             console.log(response); 
             return response;
          });
