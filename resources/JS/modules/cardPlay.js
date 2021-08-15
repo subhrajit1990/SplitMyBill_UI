@@ -1,5 +1,5 @@
 import CommonFunctions from './commonFunctions.js'
-export default class CardPlay {
+export default class CardPlay extends CommonFunctions {
 	
 	constructor(initiateTimer,time){
 		this.initiateTimer = initiateTimer;
