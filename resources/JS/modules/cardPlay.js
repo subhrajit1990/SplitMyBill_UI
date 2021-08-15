@@ -171,7 +171,8 @@ export default class CardPlay extends CommonFunctions {
          */
        
        const extraParameters = {            
-            method: 'GET'
+            method: 'POST',
+	    body: JSON.stringify({"fetchCardsRequestWrapper":{})
         };
 
         let fethData = await this.serverCall("api/fetchCards",extraParameters,"").then(response => {
