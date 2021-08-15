@@ -220,7 +220,7 @@ export default class CardPlay extends CommonFunctions {
         "cardIcon": "fa-gamepad"
       },
 	    {
-		    "cardIcon":"fa-alarm-snooze""
+		    "cardIcon":"fa-alarm-snooze"
 	    },
 	    {
 		    "cardIcon":"fa-fan-table"
