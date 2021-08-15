@@ -174,13 +174,55 @@ export default class CardPlay extends CommonFunctions {
        
        const extraParameters = {            
             method: 'POST',
-	    body: JSON.stringify({"fetchGroupsRequest":{"creatorAccountNumber":"892749724797"}})
+	    body: JSON.stringify({"fetchCardsRequestWrapper":{}})
         };
 
-        let fethData = await this.serverCall("expenses/api/fetchGroups",extraParameters,"").then(response => {
+        /*let fethData = await this.serverCall("expenses/api/getCards",extraParameters,"").then(response => {
             console.log(response); 
             return response;
-         });
+         }); */
+		
+	fethData = 	{
+  "ResponseHeader": {
+    "ResponseCode": "0",
+    "httpStatus": "OK"
+  },
+  "gameCardListResponse": {
+    "gameCardResponse": [
+      {
+        "cardIcon": "fa-bath"
+      },
+      {
+        "cardIcon": "fa-bell"
+      },
+      {
+        "cardIcon": "fa-binoculars"
+      },
+      {
+        "cardIcon": "fa-birthday-cake"
+      },
+      {
+        "cardIcon": "fa-blind"
+      },
+      {
+        "cardIcon": "fa-beer"
+      },
+      {
+        "cardIcon": "fa-rocket"
+      },
+      {
+        "cardIcon": "fa-ship"
+      },
+      {
+        "cardIcon": "fa-truck"
+      },
+      {
+        "cardIcon": "fa-gamepad"
+      }
+    ]
+  }
+} ;
+
       
         let fetchCardsList = [];
         if(fethData.ResponseHeader.ResponseCode === "0"){
