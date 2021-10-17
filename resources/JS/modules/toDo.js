@@ -17,7 +17,7 @@ export default class toDo extends CommonFunctions {
 	    return fethData;
 		}
 	
-	}
+	
 
 	async toDoAdd(){
 		const extraParameters = {			
@@ -31,7 +31,7 @@ export default class toDo extends CommonFunctions {
 	    return fethData;
 		}
 	
-	}
+	
 	async toDoEdit(){
 		const extraParameters = {			
 		    method: 'POST',
@@ -44,7 +44,7 @@ export default class toDo extends CommonFunctions {
 	    return fethData;
 		}
 	
-	}
+	
 
 	async toDoDelete(){
 		const extraParameters = {			
@@ -58,5 +58,5 @@ export default class toDo extends CommonFunctions {
 	    return fethData;
 		}
 	
-	}
+	
 }
