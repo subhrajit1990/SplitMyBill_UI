@@ -37,6 +37,7 @@ class CommonFunctions{
 					'Authorization':'Basic YWRtaW46cGFzc3dvcmQ=',
 				},
 			mode: 'no-cors',
+			credentials: 'include'
 		}
 
 		let absPath = "";
