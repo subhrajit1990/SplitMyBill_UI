@@ -35,7 +35,7 @@ class CommonFunctions{
 			    		'channel': this.getChannel(),
 			    		'masterTxnRefNo': this.genMasterTxnRefNo(),
 					'Authorization':'Basic YWRtaW46cGFzc3dvcmQ=',
-					'Origin','https://sharemybill.herokuapp.com/'
+					'Origin':'https://sharemybill.herokuapp.com/',
 				},
 			mode: 'no-cors',
 			credentials: 'include'
