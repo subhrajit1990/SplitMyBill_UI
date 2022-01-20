@@ -34,6 +34,7 @@ class CommonFunctions{
 		     			'Accept': 'application/json',
 			    		'channel': this.getChannel(),
 			    		'masterTxnRefNo': this.genMasterTxnRefNo(),
+					'authorization': 'Basic YWRtaW46cGFzc3dvcmQ=',
 					
 				}
 		}
