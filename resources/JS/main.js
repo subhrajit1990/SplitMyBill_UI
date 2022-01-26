@@ -221,7 +221,7 @@ SMB.bootStrapJSOps = new function(){
 			}}
 		}
 		let mainRt = new MainRoute();
-		const fetchGroupRes = await mainRt.contactMe(reqPayload);
+		const fetchGroupRes = mainRt.contactMe(reqPayload);
 		console.log("contact me execution finished");
 	}
 }
