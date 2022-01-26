@@ -201,11 +201,11 @@ SMB.bootStrapJSOps = new function(){
             		inputEmail: {
                 		verify: ["email"],
                 		message: ["Please enter the email"]
-            		}
+            		},
             		inputPhone: {
                 		verify: ["number"],
                 		message: ["Please enter the phone number"]
-            		}
+            		},
             		inputMessage: {
                 		verify: ["nullCheck"],
                	 		message: ["Please enter the message"]
