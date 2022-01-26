@@ -190,27 +190,27 @@ SMB.bootStrapJSOps = new function(){
 		resetGroupForm();
 	}
 
-	contactFormValidation = form(){
+	contactFormValidation = function(){
 		console.log("contact me execution started");
 		let form = document.getElementById("contactForm").getElementsByTagName("input"),
 		form_validator_check = {
-            inputName: {
-                verify: ["nullCheck"],
-                message: ["Please enter the name"]
-            },
-            inputEmail: {
-                verify: ["email"],
-                message: ["Please enter the email"]
-            }
-            inputPhone: {
-                verify: ["number"],
-                message: ["Please enter the phone number"]
-            }
-            inputMessage: {
-                verify: ["nullCheck"],
-                message: ["Please enter the message"]
-            }
-        };
+            		inputName: {
+               			verify: ["nullCheck"],
+                		message: ["Please enter the name"]
+            		},
+            		inputEmail: {
+                		verify: ["email"],
+                		message: ["Please enter the email"]
+            		}
+            		inputPhone: {
+                		verify: ["number"],
+                		message: ["Please enter the phone number"]
+            		}
+            		inputMessage: {
+                		verify: ["nullCheck"],
+               	 		message: ["Please enter the message"]
+            		}
+        	};
 		if(mainRt.validateForm(form,form_validator_check)){
 			let reqPayload = {"contactMeRequest":{
 	
