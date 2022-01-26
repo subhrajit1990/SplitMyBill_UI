@@ -17,7 +17,7 @@ class CommonValidationFunctions{
     
     email(s) {   
         let email = (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(s));
-        this.err = a ? 0 : 6;
+        this.err = s ? 0 : 6;
     return this.err;
     }
     
