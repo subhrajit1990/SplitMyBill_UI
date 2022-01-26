@@ -211,6 +211,7 @@ SMB.bootStrapJSOps = new function(){
                	 		message: ["Please enter the message"]
             		}
         	};
+		let mainRt = new MainRoute();
 		if(mainRt.validateForm(form,form_validator_check)){
 			let reqPayload = {"contactMeRequest":{
 	
@@ -220,7 +221,7 @@ SMB.bootStrapJSOps = new function(){
 				"message":form[3].value
 			}}
 		}
-		let mainRt = new MainRoute();
+		
 		const fetchGroupRes = mainRt.contactMe(reqPayload);
 		console.log("contact me execution finished");
 	}
