@@ -34,5 +34,8 @@ class CommonValidationFunctions{
         this.err = RE.test(s) ? 0 : 10;
     return this.err;
   }
+  nwts(s) {
+    return s.replace(/\s+/g, '');
+  }
 }
 export default CommonValidationFunctions
