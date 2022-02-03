@@ -129,7 +129,7 @@ class MainRoute{
 		let contactMeRes="";
 		try{
 			const contactme = new contactMe( payLoad );
-	   		contactMeRes = todo.contact();
+	   		contactMeRes = contactme.contact();
 			console.log( contactMeRes  );
 		}catch(err){
 			throw new  Error("Exception happened during contact me details submission");
