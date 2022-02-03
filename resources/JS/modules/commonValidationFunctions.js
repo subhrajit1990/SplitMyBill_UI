@@ -27,14 +27,14 @@ class CommonValidationFunctions{
     
     number(s) {
         s =  s.replace(/,/g , "");
-        s = nwts(s) - 0;
+        s = (s.replace(/\s+/g, '')) - 0;
         this.err = (s == 0) || isNaN(s) ? 10 : 0;
     return [this.err ? 0 : s];
     }
 
     floatNum(s) {
         const RE = /^[0-9]{1,4}(\.[0-9]{0,3})?$/;
-        s = parseFloat(nwts(s));
+        s = parseFloat(s.replace(/\s+/g, ''));
         this.err = RE.test(s) ? 0 : 10;
     return this.err;
   }
