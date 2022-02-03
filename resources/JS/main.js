@@ -216,9 +216,10 @@ SMB.bootStrapJSOps = new function(){
 				"phoneNumber":form[2].value,
 				"message":document.getElementById("contactForm").getElementsByTagName("input").value
 			}}
+			const fetchGroupRes = mainRt.contactMe(reqPayload);
 		}
 		
-		const fetchGroupRes = mainRt.contactMe(reqPayload);
+		
 		console.log("contact me execution finished");
 	}
 }
