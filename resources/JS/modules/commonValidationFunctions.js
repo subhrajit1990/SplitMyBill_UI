@@ -5,6 +5,10 @@ class CommonValidationFunctions{
     
     // sample validation methods
     
+    nwts(s) {
+     return s.replace(/\s+/g, '');
+    }
+
     nullCheck(s) {
       this.err = s.length ? 0 : 5;
     return this.err;
@@ -33,9 +37,6 @@ class CommonValidationFunctions{
         s = parseFloat(nwts(s));
         this.err = RE.test(s) ? 0 : 10;
     return this.err;
-  }
-  nwts(s) {
-    return s.replace(/\s+/g, '');
   }
 }
 export default CommonValidationFunctions
