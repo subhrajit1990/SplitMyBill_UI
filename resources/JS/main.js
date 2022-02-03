@@ -214,7 +214,7 @@ SMB.bootStrapJSOps = new function(){
 				"name":form[0].value,
 				"email":form[1].value,
 				"phoneNumber":form[2].value,
-				"message":document.getElementById("contactForm").getElementsByTagName("input").value
+				"message":document.getElementById("inputMessage").value
 			}}
 			const fetchGroupRes = mainRt.contactMe(reqPayload);
 		}
