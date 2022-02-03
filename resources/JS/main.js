@@ -205,10 +205,6 @@ SMB.bootStrapJSOps = new function(){
             		inputPhone: {
                 		verify: ["number"],
                 		message: ["Please enter the phone number"]
-            		},
-            		inputMessage: {
-                		verify: ["nullCheck"],
-               	 		message: ["Please enter the message"]
             		}
         	};
 		let mainRt = new MainRoute();
