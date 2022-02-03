@@ -128,8 +128,8 @@ class MainRoute{
 	contactMe(payload){
 		let contactMeRes="";
 		try{
-			const contactme = new ContactMe( payLoad );
-	   		toDoDeleteRes = todo.contact();
+			const contactme = new contactMe( payLoad );
+	   		contactMeRes = todo.contact();
 			console.log( contactMeRes  );
 		}catch(err){
 			throw new  Error("Exception happened during contact me details submission");
