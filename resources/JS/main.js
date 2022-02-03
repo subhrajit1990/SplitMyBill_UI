@@ -214,7 +214,7 @@ SMB.bootStrapJSOps = new function(){
 				"name":form[0].value,
 				"email":form[1].value,
 				"phoneNumber":form[2].value,
-				"message":form[3].value
+				"message":document.getElementById("contactForm").getElementsByTagName("input").value
 			}}
 		}
 		
