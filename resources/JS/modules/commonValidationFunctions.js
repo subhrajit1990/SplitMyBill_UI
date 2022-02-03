@@ -28,8 +28,8 @@ class CommonValidationFunctions{
     number(s) {
         s =  s.replace(/,/g , "");
         s = (s.replace(/\s+/g, '')) - 0;
-        this.err = (s == 0) || isNaN(s) ? 10 : 0;
-    return [this.err ? 0 : s];
+        this.err =  isNaN(s) ? 10 : 0;
+        return this.err;
     }
 
     floatNum(s) {
