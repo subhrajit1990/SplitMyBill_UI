@@ -225,8 +225,8 @@ SMB.bootStrapJSOps = new function(){
 
 	speechToText = function(){
 		let tempGroupForm = document.getElementById("speechToTextForm");
-		if (tempGroupForm.style.display === "block") {
- 			tempGroupForm.style.display = "none";
+		if (tempGroupForm.style.display === "none") {
+ 			tempGroupForm.style.display = "block";
   		}
 		
 		
