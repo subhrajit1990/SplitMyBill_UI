@@ -241,7 +241,7 @@ SMB.bootStrapJSOps = new function(){
             const transcript = Array.from(e.results)
                 .map(result => result[0])
                 .map(result => result.transcript)
-                .join('')
+                .join('');
   
             document.getElementById("paragraph).innerHTML = transcript;
             console.log(transcript);
