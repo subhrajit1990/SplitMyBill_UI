@@ -243,7 +243,7 @@ SMB.bootStrapJSOps = new function(){
                 .map(result => result.transcript)
                 .join('');
   
-            document.getElementById("paragraph).innerHTML = transcript;
+           // document.getElementById("paragraph).innerHTML = transcript;
             console.log(transcript);
         });
           
