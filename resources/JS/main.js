@@ -222,6 +222,15 @@ SMB.bootStrapJSOps = new function(){
 		
 		console.log("contact me execution finished");
 	}
+
+	speechToText = function(){
+		let tempGroupForm = document.getElementById("speechToTextForm");
+		if (tempGroupForm.style.display === "block") {
+ 			tempGroupForm.style.display = "none";
+  		}
+		
+		
+	}
 }
 
 bootStrapJS = SMB.bootStrapJSOps
